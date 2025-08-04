@@ -10,7 +10,6 @@ import buildingAnAiMarketingStrategy from '../assets/images/blog/building-an-ai-
 import canAiWritingToolsMakeYouABetterWriter from '../assets/images/blog/can-ai-writing-tools-make-you-a-better-writer.jpg';
 import ecommerceWebsiteBuilderPlatformsExplained from '../assets/images/blog/ecommerce-website-builder-platforms-explained.jpg';
 import ecommerceWebsiteRedesign from '../assets/images/blog/ecommerce-website-redesign.jpg';
-import effortlessBusinessGrowth from '../assets/images/blog/effortless-business-growth.jpg';
 import facebookLeadGeneration from '../assets/images/blog/facebook-lead-generation.jpg';
 import howMuchDoesAWixWebsiteCostToBuild from '../assets/images/blog/how-much-does-a-wix-website-cost-to-build.jpg';
 import howToBuildAnAiPoweredLeadGenerationSystemRealCaseStudy from '../assets/images/blog/how-to-build-an-ai-powered-lead-generation-system-real-case-study.jpg';
@@ -53,7 +52,6 @@ export const blogImages: Record<string, any> = {
   'can-ai-writing-tools-make-you-a-better-writer': canAiWritingToolsMakeYouABetterWriter,
   'ecommerce-website-builder-platforms-explained': ecommerceWebsiteBuilderPlatformsExplained,
   'ecommerce-website-redesign': ecommerceWebsiteRedesign,
-  'effortless-business-growth': effortlessBusinessGrowth,
   'facebook-lead-generation': facebookLeadGeneration,
   'how-much-does-a-wix-website-cost-to-build': howMuchDoesAWixWebsiteCostToBuild,
   'how-to-build-an-ai-powered-lead-generation-system-real-case-study': howToBuildAnAiPoweredLeadGenerationSystemRealCaseStudy,
