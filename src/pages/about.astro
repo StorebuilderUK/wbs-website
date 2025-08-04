@@ -2,6 +2,8 @@
 import BaseLayout from '../layouts/BaseLayout.astro';
 import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
+import { Image } from 'astro:assets';
+import tonyOffice from '../assets/images/about/tony-office.jpg';
 ---
 
 <BaseLayout title="About Us - We Build Stores" description="Learn about We Build Stores, our team, and our 25+ years of experience helping businesses grow online.">
@@ -55,6 +57,21 @@ import Footer from '../components/Footer.astro';
             in web development and digital marketing. His hands-on approach and dedication to client 
             success have been the driving force behind the company's growth and reputation.
           </p>
+          
+          <div class="my-8">
+            <Image 
+              src={tonyOffice} 
+              alt="Tony Cooper's office in Telford - where digital strategies come to life" 
+              class="rounded-lg shadow-xl w-full"
+              width={800}
+              height={600}
+              format="webp"
+              quality={85}
+            />
+            <p class="text-sm text-gray-600 mt-2 text-center">
+              Our Telford office - where we craft digital solutions for businesses across the UK
+            </p>
+          </div>
         </div>
       </div>
     </section>
