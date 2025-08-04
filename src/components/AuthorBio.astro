@@ -1,0 +1,36 @@
+---
+export interface Props {
+  author?: string;
+  title?: string;
+  image?: string;
+}
+
+const { 
+  author = "Tony Cooper",
+  title = "Founder",
+  image = "https://static.wixstatic.com/media/b0d63a_15ab6144f0084ab89ae5dee757358a72~mv2.png/v1/fill/w_200,h_200,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/Photo-Tony-CIRCULAR-2025-1.png"
+} = Astro.props;
+---
+
+<div class="bg-gray-50 rounded-lg p-6 my-8">
+  <div class="flex items-start gap-6">
+    <img 
+      src={image} 
+      alt={author}
+      class="w-24 h-24 rounded-full object-cover"
+    />
+    <div class="flex-1">
+      <h3 class="text-xl font-semibold text-gray-900 mb-1">{author}</h3>
+      <p class="text-blue-900 font-medium mb-3">{title}</p>
+      <p class="text-gray-600 text-sm leading-relaxed">
+        Put My Crackerjack Digital Marketing Skills To Work On Your Next Website Design Project!
+      </p>
+      <a 
+        href="/contact" 
+        class="inline-block mt-4 bg-blue-900 text-white px-6 py-2 rounded hover:bg-blue-950 transition-colors"
+      >
+        Get Started
+      </a>
+    </div>
+  </div>
+</div>

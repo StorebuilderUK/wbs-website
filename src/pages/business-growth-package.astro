@@ -1,0 +1,32 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import { getEntry } from 'astro:content';
+
+const page = await getEntry('pages', 'business-growth-package');
+const { Content } = await page.render();
+---
+
+<BaseLayout title={page.data.title} description={page.data.description}>
+  <Header />
+  
+  <style>
+    .content-wrapper :global(.pricing-section) {
+      width: 100vw;
+      position: relative;
+      left: 50%;
+      right: 50%;
+      margin-left: -50vw;
+      margin-right: -50vw;
+    }
+  </style>
+  
+  <main>
+    <div class="content-wrapper prose prose-lg mx-auto max-w-4xl px-4 py-8 sm:px-6 lg:px-8 prose-headings:text-wbs-blue prose-a:text-wbs-blue hover:prose-a:text-blue-900">
+      <Content />
+    </div>
+  </main>
+  
+  <Footer />
+</BaseLayout>

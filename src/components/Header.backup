@@ -1,0 +1,86 @@
+---
+const navigation = [
+  { name: 'Home', href: '/' },
+  { name: 'Services', href: '/services' },
+  { name: 'Blog', href: '/blog' },
+  { name: 'About', href: '/about' },
+  { name: 'Contact', href: '/contact' },
+]
+---
+
+<header class="bg-white shadow-sm sticky top-0 z-50">
+  <nav class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+    <div class="flex h-16 justify-between items-center">
+      <!-- Logo -->
+      <div class="flex-shrink-0 flex items-center">
+        <a href="/" class="text-2xl font-bold text-wbs-blue">
+          We Build Stores
+        </a>
+      </div>
+      
+      <!-- Desktop Navigation -->
+      <div class="hidden sm:flex sm:space-x-8">
+        {navigation.map((item) => (
+          <a
+            href={item.href}
+            class="inline-flex items-center px-1 pt-1 text-sm font-medium text-gray-700 hover:text-wbs-orange transition-colors"
+          >
+            {item.name}
+          </a>
+        ))}
+      </div>
+      
+      <!-- CTA Button -->
+      <div class="hidden sm:block">
+        <a
+          href="/contact"
+          class="inline-flex items-center px-4 py-2 border border-transparent text-sm font-medium rounded-md text-white bg-wbs-orange hover:bg-orange-700 transition-colors"
+        >
+          Get Started
+        </a>
+      </div>
+      
+      <!-- Mobile menu button -->
+      <div class="sm:hidden">
+        <button
+          type="button"
+          class="inline-flex items-center justify-center p-2 rounded-md text-gray-700 hover:text-gray-900 hover:bg-gray-100"
+          id="mobile-menu-button"
+        >
+          <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+          </svg>
+        </button>
+      </div>
+    </div>
+  </nav>
+  
+  <!-- Mobile menu -->
+  <div class="sm:hidden hidden" id="mobile-menu">
+    <div class="pt-2 pb-3 space-y-1">
+      {navigation.map((item) => (
+        <a
+          href={item.href}
+          class="block pl-3 pr-4 py-2 text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50"
+        >
+          {item.name}
+        </a>
+      ))}
+      <a
+        href="/contact"
+        class="block pl-3 pr-4 py-2 text-base font-medium text-white bg-wbs-orange hover:bg-orange-700 mx-3 rounded-md text-center"
+      >
+        Get Started
+      </a>
+    </div>
+  </div>
+</header>
+
+<script>
+  const button = document.getElementById('mobile-menu-button');
+  const menu = document.getElementById('mobile-menu');
+  
+  button?.addEventListener('click', () => {
+    menu?.classList.toggle('hidden');
+  });
+</script>

@@ -1,24 +1,67 @@
 # build output
 dist/
+.output/
+.vercel/
+*.local
+
 # generated types
 .astro/
 
 # dependencies
 node_modules/
+.pnp
+.pnp.js
 
 # logs
+logs
+*.log
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 pnpm-debug.log*
+lerna-debug.log*
 
-
-# environment variables
+# environment variables - VERY IMPORTANT!
 .env
+.env.*
+.env.local
 .env.production
+.env.production.local
+.env.development.local
 
-# macOS-specific files
-.DS_Store
-
-# jetbrains setting folder
+# Editor directories and files
+.vscode/*
+!.vscode/extensions.json
+!.vscode/settings.json
 .idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Temporary files
+*.tmp
+*.temp
+.cache/
+
+# Testing
+coverage/
+.nyc_output/
+
+# Security - Never commit these!
+*.pem
+*.key
+*.cert
+.npmrc
+
+# Deployment files
+.netlify/
+.vercel/
+
+# Local development
+*.local

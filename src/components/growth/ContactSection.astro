@@ -1,0 +1,100 @@
+---
+export interface Props {
+  headline?: string;
+  subheadline?: string;
+}
+
+const { 
+  headline = "Ready to Get More Jobs?",
+  subheadline = "Call Tony directly or fill out the form below"
+} = Astro.props;
+---
+
+<section class="bg-gray-50 pt-4 pb-16">
+  <div class="max-w-6xl mx-auto px-4">
+    <div class="text-center mb-8">
+      <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">{headline}</h2>
+      <p class="text-xl text-gray-700">{subheadline}</p>
+    </div>
+    
+    <div class="grid md:grid-cols-2 gap-12 max-w-4xl mx-auto">
+      <!-- Phone Contact -->
+      <div class="bg-white rounded-lg p-8 shadow-md text-center">
+        <div class="w-16 h-16 bg-wbs-orange/10 rounded-full flex items-center justify-center mx-auto mb-4">
+          <svg class="w-8 h-8 text-wbs-orange" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path>
+          </svg>
+        </div>
+        <h3 class="text-2xl font-bold text-gray-900 mb-2">Call Tony Now</h3>
+        <a href="tel:01952407599" class="text-3xl font-bold text-wbs-orange hover:text-wbs-orange/80 no-underline">
+          01952 407599
+        </a>
+        <p class="text-gray-600 mt-2">Quick chat about your needs</p>
+      </div>
+      
+      <!-- Form -->
+      <div class="bg-white rounded-lg p-8 shadow-md">
+        <h3 class="text-2xl font-bold text-gray-900 mb-6">Get Started Online</h3>
+        <form action="/contact" method="POST" class="space-y-4">
+          <div>
+            <label for="name" class="block text-sm font-medium text-gray-700 mb-1">Your Name</label>
+            <input 
+              type="text" 
+              id="name" 
+              name="name" 
+              required 
+              class="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-2 focus:ring-wbs-orange focus:border-wbs-orange"
+            />
+          </div>
+          
+          <div>
+            <label for="phone" class="block text-sm font-medium text-gray-700 mb-1">Phone Number</label>
+            <input 
+              type="tel" 
+              id="phone" 
+              name="phone" 
+              required 
+              class="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-2 focus:ring-wbs-orange focus:border-wbs-orange"
+            />
+          </div>
+          
+          <div>
+            <label for="email" class="block text-sm font-medium text-gray-700 mb-1">Email Address</label>
+            <input 
+              type="email" 
+              id="email" 
+              name="email" 
+              required 
+              class="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-2 focus:ring-wbs-orange focus:border-wbs-orange"
+            />
+          </div>
+          
+          <div>
+            <label for="package" class="block text-sm font-medium text-gray-700 mb-1">I'm Interested In</label>
+            <select 
+              id="package" 
+              name="package" 
+              class="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-2 focus:ring-wbs-orange focus:border-wbs-orange"
+            >
+              <option value="">Select a package...</option>
+              <option value="trades-49">£49 - Get Found Online</option>
+              <option value="trades-169">£169 - Get More Leads</option>
+              <option value="trades-330">£330 - Dominate Locally</option>
+              <option value="business-330">£330 - Business Growth Foundation</option>
+              <option value="business-595">£595 - Intelligence Advantage</option>
+              <option value="business-995">£995 - Market Domination</option>
+              <option value="not-sure">Not sure yet</option>
+            </select>
+          </div>
+          
+          <button 
+            type="submit" 
+            class="w-full bg-wbs-orange text-white py-3 px-6 rounded-md font-semibold hover:bg-wbs-orange/90 transition-colors duration-200"
+          >
+            Get Started
+          </button>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>

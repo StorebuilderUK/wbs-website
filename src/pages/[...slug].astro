@@ -1,0 +1,53 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import { getCollection, getEntry } from 'astro:content';
+
+export async function getStaticPaths() {
+  const pages = await getCollection('pages');
+  
+  return pages.map((page) => ({
+    params: { slug: page.slug },
+    props: { page },
+  }));
+}
+
+const { page } = Astro.props;
+const { Content } = await page.render();
+
+// Use frontmatter data if available, otherwise extract from content
+let title = page.data.title || page.slug.replace(/-/g, ' ').replace(/\b\w/g, l => l.toUpperCase());
+let metaDescription = page.data.description || '';
+
+// If no frontmatter, try to extract from content
+if (!page.data.title || !page.data.description) {
+  const rawContent = page.body;
+  const lines = rawContent.split('\n');
+  
+  // Look for title and meta description in the content
+  for (let i = 0; i < Math.min(20, lines.length); i++) {
+    const line = lines[i];
+    if (line.startsWith('# ') && !page.data.title) {
+      title = line.substring(2).trim();
+    }
+    if ((line.includes('**Meta Description:**') || line.includes('Meta Description:')) && !page.data.description) {
+      metaDescription = line.replace(/\*\*Meta Description:\*\*/, '').replace('Meta Description:', '').trim();
+    }
+  }
+}
+---
+
+<BaseLayout title={title} description={metaDescription}>
+  <Header />
+  
+  <main>
+    <article class="mx-auto max-w-4xl px-4 py-8 sm:px-6 lg:px-8">
+      <div class="prose prose-lg max-w-none prose-headings:text-wbs-blue prose-a:text-blue-900 hover:prose-a:text-blue-950 [&>section]:!mt-0">
+        <Content />
+      </div>
+    </article>
+  </main>
+  
+  <Footer />
+</BaseLayout>

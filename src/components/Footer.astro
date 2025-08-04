@@ -1,0 +1,68 @@
+---
+import GuaranteeSection from './GuaranteeSection.astro';
+const currentYear = new Date().getFullYear();
+---
+
+<GuaranteeSection />
+
+<footer class="bg-gray-900 text-white">
+  <div class="mx-auto max-w-7xl px-4 py-12 sm:px-6 lg:px-8">
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8">
+      <!-- Company Info -->
+      <div class="space-y-4">
+        <h3 class="text-lg font-semibold">We Build Stores</h3>
+        <p class="text-sm text-gray-400">
+          Professional web design and SEO services with over 25 years of experience.
+        </p>
+      </div>
+      
+      <!-- Services -->
+      <div>
+        <h4 class="text-sm font-semibold uppercase tracking-wider mb-4">Services</h4>
+        <ul class="space-y-2">
+          <li><a href="/website-design" class="text-sm text-gray-400 hover:text-white transition-colors">Website Design</a></li>
+          <li><a href="/ecommerce-design" class="text-sm text-gray-400 hover:text-white transition-colors">Ecommerce Development</a></li>
+          <li><a href="/seo-campaign-management" class="text-sm text-gray-400 hover:text-white transition-colors">SEO Services</a></li>
+          <li><a href="/graphic-design" class="text-sm text-gray-400 hover:text-white transition-colors">Graphic Design</a></li>
+        </ul>
+      </div>
+      
+      <!-- Growth Plans -->
+      <div>
+        <h4 class="text-sm font-semibold uppercase tracking-wider mb-4">Growth Plans</h4>
+        <ul class="space-y-2">
+          <li><a href="/business-growth-package" class="text-sm text-gray-400 hover:text-white transition-colors">View All Plans</a></li>
+          <li><a href="/business-growth-package#breakthrough" class="text-sm text-gray-400 hover:text-white transition-colors">Breakthrough £330</a></li>
+          <li><a href="/business-growth-package#trailblazer" class="text-sm text-gray-400 hover:text-white transition-colors">Trailblazer £595</a></li>
+          <li><a href="/business-growth-package#torchbearer" class="text-sm text-gray-400 hover:text-white transition-colors">Torch Bearer £995</a></li>
+        </ul>
+      </div>
+      
+      <!-- Company -->
+      <div>
+        <h4 class="text-sm font-semibold uppercase tracking-wider mb-4">Company</h4>
+        <ul class="space-y-2">
+          <li><a href="/about" class="text-sm text-gray-400 hover:text-white transition-colors">About Us</a></li>
+          <li><a href="/blog" class="text-sm text-gray-400 hover:text-white transition-colors">Blog</a></li>
+          <li><a href="/contact" class="text-sm text-gray-400 hover:text-white transition-colors">Contact</a></li>
+          <li><a href="https://conductor.webuildstores.co.uk/client/login-secure/" class="text-sm text-gray-400 hover:text-white transition-colors">Client Portal</a></li>
+        </ul>
+      </div>
+      
+      <!-- Contact -->
+      <div>
+        <h4 class="text-sm font-semibold uppercase tracking-wider mb-4">Get in Touch</h4>
+        <ul class="space-y-2 text-sm text-gray-400">
+          <li>Email: tony.cooper@webuildstores.co.uk</li>
+          <li>Location: Telford, UK</li>
+        </ul>
+      </div>
+    </div>
+    
+    <div class="mt-8 pt-8 border-t border-gray-800">
+      <p class="text-center text-sm text-gray-400">
+        © {currentYear} We Build Stores. All rights reserved.
+      </p>
+    </div>
+  </div>
+</footer>

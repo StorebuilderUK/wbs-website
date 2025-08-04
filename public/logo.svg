@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+  <!-- Blue background square -->
+  <rect width="100" height="100" rx="8" fill="#052b5c"/>
+  
+  <!-- Browser window -->
+  <g fill="white">
+    <!-- Main browser frame -->
+    <rect x="15" y="20" width="50" height="40" rx="3" fill="none" stroke="white" stroke-width="3"/>
+    <!-- Browser header bar -->
+    <rect x="15" y="20" width="50" height="8" rx="3" fill="white"/>
+    
+    <!-- Mobile device -->
+    <rect x="55" y="35" width="25" height="40" rx="3" fill="none" stroke="white" stroke-width="3"/>
+    <!-- Mobile screen -->
+    <rect x="58" y="38" width="19" height="30" fill="none" stroke="white" stroke-width="1"/>
+    <!-- Mobile home button -->
+    <circle cx="67.5" cy="71" r="2" fill="white"/>
+  </g>
+</svg>

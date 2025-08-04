@@ -1,0 +1,130 @@
+---
+export interface PricingTier {
+  name: string;
+  price: string;
+  description: string;
+  features: string[];
+  ctaText?: string;
+  ctaLink?: string;
+  isPopular?: boolean;
+}
+
+export interface Props {
+  title?: string;
+  subtitle?: string;
+  tiers: PricingTier[];
+  variant?: 'dark' | 'light';
+}
+
+const { 
+  title = "Choose Your Growth Path",
+  subtitle = "Professional solutions that deliver real results",
+  tiers,
+  variant = 'dark'
+} = Astro.props;
+
+const isDark = variant === 'dark';
+---
+
+<section class={`pricing-section relative pt-4 pb-12 overflow-hidden ${isDark ? '' : 'bg-gray-50'}`}>
+  {isDark && (
+    <>
+      <!-- Dark Mode Background -->
+      <div class="absolute inset-0 bg-gradient-to-br from-wbs-blue via-blue-800 to-blue-900 opacity-90"></div>
+      <div class="absolute inset-0">
+        <div class="absolute top-20 left-10 w-72 h-72 bg-wbs-orange/20 rounded-full blur-3xl animate-pulse"></div>
+        <div class="absolute bottom-20 right-10 w-96 h-96 bg-wbs-blue/20 rounded-full blur-3xl animate-pulse" style="animation-delay: 2s"></div>
+      </div>
+    </>
+  )}
+  
+  <div class="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+    <div class="text-center mb-16">
+      <h2 class={`text-4xl font-bold mb-3 ${isDark ? '!text-white' : 'text-gray-900'}`}>{title}</h2>
+      <p class={`text-xl ${isDark ? '!text-white/90' : 'text-gray-600'}`}>{subtitle}</p>
+    </div>
+    
+    <div class={`grid grid-cols-1 ${tiers.length === 3 ? 'md:grid-cols-3' : 'md:grid-cols-2'} gap-8 ${tiers.length === 2 ? 'max-w-4xl' : 'max-w-5xl'} mx-auto`}>
+      {tiers.map((tier, index) => {
+        const isMiddle = tiers.length === 3 && index === 1;
+        const shouldScale = tier.isPopular && tiers.length > 2; // Only scale if 3+ tiers
+        
+        return (
+          <div class={`group relative ${shouldScale ? 'transform md:scale-105 md:mt-4' : ''}`}>
+            {tier.isPopular && (
+              <div class="absolute -top-8 left-1/2 transform -translate-x-1/2 z-10">
+                <div class="bg-gradient-to-r from-wbs-orange to-blue-700 text-white text-sm font-bold px-4 py-1 rounded-full animate-pulse shadow-lg">
+                  MOST POPULAR
+                </div>
+              </div>
+            )}
+            
+            {/* Card Glow Effect */}
+            <div class={`absolute inset-0 ${
+              tier.isPopular 
+                ? 'bg-gradient-to-r from-wbs-orange/40 to-blue-700/30' 
+                : isDark ? 'bg-gradient-to-r from-white/20 to-white/10' : 'bg-gray-200/50'
+            } rounded-2xl blur-xl transform group-hover:scale-105 transition-transform`}></div>
+            
+            {/* Card Content */}
+            <div class={`relative ${
+              isDark 
+                ? tier.isPopular 
+                  ? 'bg-gradient-to-br from-white/20 to-white/10 backdrop-blur-md border-2 border-wbs-orange/50' 
+                  : 'bg-white/10 backdrop-blur-md border border-white/20'
+                : 'bg-white border border-gray-200 shadow-lg'
+            } rounded-2xl p-8 ${
+              isDark 
+                ? tier.isPopular 
+                  ? 'hover:from-white/30 hover:to-white/20' 
+                  : 'hover:bg-white/20'
+                : 'hover:shadow-xl'
+            } transition-all duration-300 transform hover:-translate-y-2`}>
+              
+              <div class="text-center mb-6">
+                <h3 class={`text-2xl font-bold mb-2 ${isDark ? 'text-white' : 'text-gray-900'}`}>{tier.name}</h3>
+                <div class="flex items-baseline justify-center gap-1">
+                  <span class={`text-5xl font-bold ${isDark ? 'text-white' : 'text-gray-900'}`}>{tier.price}</span>
+                  <span class={`${isDark ? 'text-white/70' : 'text-gray-600'}`}>/month</span>
+                </div>
+                <p class={`mt-2 ${isDark ? 'text-white/80' : 'text-gray-600'}`}>{tier.description}</p>
+              </div>
+              
+              <ul class="space-y-3 mb-8">
+                {tier.features.map((feature) => (
+                  <li class={`flex items-start ${isDark ? 'text-white/90' : 'text-gray-700'}`}>
+                    <svg class="w-5 h-5 text-green-400 mr-2 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                      <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                    </svg>
+                    <span>{feature}</span>
+                  </li>
+                ))}
+              </ul>
+              
+              <a 
+                href={tier.ctaLink || '/contact'} 
+                class={`block w-full py-3 px-6 rounded-lg text-center font-semibold transition-all transform hover:scale-105 ${
+                  isDark
+                    ? tier.isPopular
+                      ? 'bg-wbs-orange hover:bg-wbs-orange/90 text-white shadow-lg'
+                      : 'bg-white/20 hover:bg-white/30 border border-white/40 text-white'
+                    : tier.isPopular
+                      ? 'bg-wbs-orange hover:bg-wbs-orange/90 text-white hover:shadow-lg'
+                      : 'bg-gray-900 text-white hover:bg-gray-800'
+                }`}
+              >
+                {tier.ctaText || 'Get Started'}
+              </a>
+            </div>
+          </div>
+        );
+      })}
+    </div>
+    
+    {isDark && (
+      <div class="text-center mt-12">
+        <p class="text-white/90 text-lg mb-4">All plans include: No contracts • Cancel anytime • 100% satisfaction guarantee</p>
+      </div>
+    )}
+  </div>
+</section>

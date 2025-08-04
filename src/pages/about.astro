@@ -1,0 +1,77 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+---
+
+<BaseLayout title="About Us - We Build Stores" description="Learn about We Build Stores, our team, and our 25+ years of experience helping businesses grow online.">
+  <Header />
+  
+  <main>
+    <!-- Hero Section -->
+    <section class="relative bg-gradient-to-br from-wbs-blue to-blue-900 text-white py-16">
+      <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        <div class="text-center">
+          <h1 class="text-4xl md:text-5xl font-bold mb-4">
+            About We Build Stores
+          </h1>
+          <p class="text-xl max-w-2xl mx-auto">
+            Your trusted partner in digital growth since 1998
+          </p>
+        </div>
+      </div>
+    </section>
+    
+    <!-- About Content -->
+    <section class="py-16">
+      <div class="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
+        <div class="prose prose-lg max-w-none">
+          <h2>25+ Years of Digital Excellence</h2>
+          <p>
+            We Build Stores has been at the forefront of web design and digital marketing since 1998. 
+            What started as a small web design agency in Telford has grown into a full-service digital 
+            marketing powerhouse, helping businesses across the UK establish and grow their online presence.
+          </p>
+          
+          <h2>Our Mission</h2>
+          <p>
+            We believe every business deserves a powerful online presence. Our mission is to make 
+            professional web design, ecommerce development, and digital marketing accessible to 
+            businesses of all sizes.
+          </p>
+          
+          <h2>Why Choose We Build Stores?</h2>
+          <ul>
+            <li><strong>Experience:</strong> Over 25 years in the industry</li>
+            <li><strong>Results-Driven:</strong> We focus on ROI and business growth</li>
+            <li><strong>Full Service:</strong> From design to marketing, we do it all</li>
+            <li><strong>Local Expertise:</strong> Based in Telford, serving the UK</li>
+            <li><strong>Transparent Pricing:</strong> No hidden fees or surprises</li>
+          </ul>
+          
+          <h2>Meet Tony Brassington</h2>
+          <p>
+            Tony Brassington, founder and CEO of We Build Stores, brings over 25 years of experience 
+            in web development and digital marketing. His hands-on approach and dedication to client 
+            success have been the driving force behind the company's growth and reputation.
+          </p>
+        </div>
+      </div>
+    </section>
+    
+    <!-- CTA Section -->
+    <section class="py-16 bg-wbs-blue text-white">
+      <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 text-center">
+        <h2 class="text-3xl font-bold mb-4">Ready to Work With Us?</h2>
+        <p class="text-xl mb-8 max-w-2xl mx-auto">
+          Let's discuss how we can help transform your online presence.
+        </p>
+        <a href="/contact" class="inline-flex items-center px-6 py-3 border border-transparent text-base font-medium rounded-md text-wbs-blue bg-white hover:bg-gray-100 transition-colors">
+          Get in Touch
+        </a>
+      </div>
+    </section>
+  </main>
+  
+  <Footer />
+</BaseLayout>

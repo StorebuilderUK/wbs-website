@@ -1,0 +1,70 @@
+---
+// Customer Reviews Component
+// You can either use the Elfsight widget or static reviews
+
+export interface Props {
+  useElfsight?: boolean;
+  elfsightAppId?: string;
+}
+
+const { useElfsight = false, elfsightAppId = '' } = Astro.props;
+
+// Sample static reviews for fallback
+const staticReviews = [
+  {
+    name: "Sarah Johnson",
+    rating: 5,
+    text: "Excellent service! The team built us a fantastic website that has really helped grow our business.",
+    business: "Johnson's Bakery"
+  },
+  {
+    name: "Mike Thompson",
+    rating: 5,
+    text: "Professional, responsive, and delivered exactly what we needed. Highly recommend!",
+    business: "Thompson Engineering"
+  },
+  {
+    name: "Emma Davis",
+    rating: 5,
+    text: "Our new ecommerce site looks amazing and sales have increased significantly.",
+    business: "Davis Fashion Boutique"
+  }
+];
+---
+
+<section class="py-16 bg-gray-50">
+  <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+    <div class="text-center mb-12">
+      <h2 class="text-3xl font-bold text-gray-900 mb-4">What Our Clients Say</h2>
+      <p class="text-lg text-gray-600">Don't just take our word for it</p>
+    </div>
+    
+    {useElfsight && elfsightAppId ? (
+      <!-- Elfsight Widget -->
+      <Fragment>
+        <script src="https://static.elfsight.com/platform/platform.js" async></script>
+        <div class={`elfsight-app-${elfsightAppId}`} data-elfsight-app-lazy></div>
+      </Fragment>
+    ) : (
+      <!-- Static Reviews -->
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        {staticReviews.map((review) => (
+          <div class="bg-white p-6 rounded-lg shadow-md">
+            <div class="flex mb-4">
+              {[...Array(review.rating)].map(() => (
+                <svg class="w-5 h-5 text-yellow-400 fill-current" viewBox="0 0 20 20">
+                  <path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z"/>
+                </svg>
+              ))}
+            </div>
+            <p class="text-gray-600 mb-4">"{review.text}"</p>
+            <div class="border-t pt-4">
+              <p class="font-semibold">{review.name}</p>
+              <p class="text-sm text-gray-500">{review.business}</p>
+            </div>
+          </div>
+        ))}
+      </div>
+    )}
+  </div>
+</section>
