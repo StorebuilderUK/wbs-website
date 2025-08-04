@@ -1,0 +1,96 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import Header from '../../components/Header.astro';
+import Footer from '../../components/Footer.astro';
+import { getCollection } from 'astro:content';
+
+// Get all blog posts
+const allPosts = await getCollection('blog');
+const posts = allPosts.sort((a, b) => new Date(b.data.pubDate).valueOf() - new Date(a.data.pubDate).valueOf());
+
+// Group posts by year
+const postsByYear = posts.reduce((acc, post) => {
+  const year = new Date(post.data.pubDate).getFullYear();
+  if (!acc[year]) acc[year] = [];
+  acc[year].push(post);
+  return acc;
+}, {} as Record<number, typeof posts>);
+
+const years = Object.keys(postsByYear).sort((a, b) => Number(b) - Number(a));
+---
+
+<BaseLayout title="Blog Archive - All Posts" description="Complete archive of all blog posts from We Build Stores.">
+  <Header />
+  
+  <main>
+    <!-- Hero Section -->
+    <section class="bg-gray-50 py-12">
+      <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        <div class="text-center">
+          <h1 class="text-4xl font-bold text-gray-900 mb-4">Complete Blog Archive</h1>
+          <p class="text-xl text-gray-600 max-w-2xl mx-auto mb-6">
+            Every article from {years[years.length - 1]} to {years[0]}. {posts.length} posts and counting.
+          </p>
+          <a href="/blog" class="inline-flex items-center text-wbs-blue hover:text-wbs-orange font-medium">
+            <span class="mr-2">←</span>
+            <span>Back to Featured Posts</span>
+          </a>
+        </div>
+      </div>
+    </section>
+    
+    <!-- Posts by Year -->
+    <section class="py-16">
+      <div class="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
+        {years.map((year) => (
+          <div class="mb-12">
+            <h2 class="text-2xl font-bold text-gray-900 mb-6 pb-2 border-b border-gray-200">
+              {year} ({postsByYear[Number(year)].length} posts)
+            </h2>
+            <div class="space-y-4">
+              {postsByYear[Number(year)].map((post) => (
+                <article class="flex flex-col sm:flex-row sm:items-start sm:justify-between py-4 border-b border-gray-100 last:border-0">
+                  <div class="flex-1">
+                    <h3 class="text-lg font-semibold mb-1">
+                      <a href={`/blog/${post.slug}`} class="text-gray-900 hover:text-orange-500 transition-colors">
+                        {post.data.title}
+                      </a>
+                    </h3>
+                    <p class="text-gray-600 text-sm mb-2">{post.data.description}</p>
+                    <div class="flex items-center gap-4 text-sm text-gray-500">
+                      <time datetime={new Date(post.data.pubDate).toISOString()}>
+                        {new Date(post.data.pubDate).toLocaleDateString('en-GB', { 
+                          day: 'numeric', 
+                          month: 'long', 
+                          year: 'numeric' 
+                        })}
+                      </time>
+                      {post.data.category && (
+                        <>
+                          <span>•</span>
+                          <span>{post.data.category}</span>
+                        </>
+                      )}
+                    </div>
+                  </div>
+                  <a href={`/blog/${post.slug}`} class="text-orange-500 hover:text-blue-950 font-medium mt-2 sm:mt-0 sm:ml-4 shrink-0">
+                    Read →
+                  </a>
+                </article>
+              ))}
+            </div>
+          </div>
+        ))}
+      </div>
+    </section>
+  </main>
+  
+  <Footer />
+</BaseLayout>
+
+<style>
+  /* Archive specific styles */
+  article:hover h3 a {
+    color: #ff6b35;
+  }
+</style>
