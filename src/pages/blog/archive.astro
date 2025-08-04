@@ -2,6 +2,7 @@
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import Header from '../../components/Header.astro';
 import Footer from '../../components/Footer.astro';
+import BlogSearch from '../../components/BlogSearch.astro';
 import { getCollection } from 'astro:content';
 
 // Get all blog posts
@@ -42,6 +43,10 @@ const years = Object.keys(postsByYear).sort((a, b) => Number(b) - Number(a));
     <!-- Posts by Year -->
     <section class="py-16">
       <div class="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
+        <!-- Search Component -->
+        <BlogSearch posts={allPosts} />
+        
+        <div class="archive-list">
         {years.map((year) => (
           <div class="mb-12">
             <h2 class="text-2xl font-bold text-gray-900 mb-6 pb-2 border-b border-gray-200">
@@ -81,6 +86,7 @@ const years = Object.keys(postsByYear).sort((a, b) => Number(b) - Number(a));
             </div>
           </div>
         ))}
+        </div>
       </div>
     </section>
   </main>

@@ -1,0 +1,314 @@
+---
+export interface Props {
+  posts: any[];
+}
+
+const { posts } = Astro.props;
+
+// Prepare search index data
+const searchData = posts.map(post => ({
+  slug: post.slug,
+  title: post.data.title,
+  description: post.data.description,
+  category: post.data.category || '',
+  tags: post.data.tags || [],
+  date: post.data.pubDate
+}));
+---
+
+<div class="blog-search mb-8">
+  <div class="relative">
+    <input
+      type="text"
+      id="search-input"
+      placeholder="Search blog posts..."
+      class="w-full px-4 py-3 pl-12 pr-4 text-gray-900 border border-gray-300 rounded-lg focus:ring-2 focus:ring-orange-500 focus:border-transparent"
+    />
+    <svg
+      class="absolute left-4 top-1/2 transform -translate-y-1/2 w-5 h-5 text-gray-400"
+      fill="none"
+      stroke="currentColor"
+      viewBox="0 0 24 24"
+    >
+      <path
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        stroke-width="2"
+        d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"
+      ></path>
+    </svg>
+    <button
+      id="clear-search"
+      class="absolute right-4 top-1/2 transform -translate-y-1/2 text-gray-400 hover:text-gray-600 hidden"
+    >
+      <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+      </svg>
+    </button>
+  </div>
+  
+  <!-- Search Results Summary -->
+  <div id="search-summary" class="mt-4 text-sm text-gray-600 hidden"></div>
+  
+  <!-- Keyboard shortcut hint -->
+  <div class="mt-2 text-xs text-gray-500">
+    Press <kbd class="px-2 py-1 text-xs bg-gray-100 border border-gray-300 rounded">Ctrl</kbd> + <kbd class="px-2 py-1 text-xs bg-gray-100 border border-gray-300 rounded">K</kbd> to search
+  </div>
+</div>
+
+<script define:vars={{ searchData }}>
+  // Simple search implementation without external dependencies
+  const searchInput = document.getElementById('search-input');
+  const clearButton = document.getElementById('clear-search');
+  const searchSummary = document.getElementById('search-summary');
+  const blogGrid = document.querySelector('.blog-grid');
+  const archiveList = document.querySelector('.archive-list');
+  
+  let originalContent = null;
+  let isSearching = false;
+  
+  // Store original content
+  if (blogGrid) {
+    originalContent = blogGrid.innerHTML;
+  } else if (archiveList) {
+    originalContent = archiveList.innerHTML;
+  }
+  
+  // Simple fuzzy search function
+  function searchPosts(query) {
+    const lowerQuery = query.toLowerCase();
+    const words = lowerQuery.split(' ').filter(w => w.length > 0);
+    
+    return searchData.filter(post => {
+      const searchText = [
+        post.title,
+        post.description,
+        post.category,
+        ...(post.tags || [])
+      ].join(' ').toLowerCase();
+      
+      // All words must match
+      return words.every(word => searchText.includes(word));
+    }).map(post => ({
+      item: post,
+      score: calculateScore(post, words)
+    })).sort((a, b) => b.score - a.score);
+  }
+  
+  // Calculate relevance score
+  function calculateScore(post, words) {
+    let score = 0;
+    const title = post.title.toLowerCase();
+    const description = post.description.toLowerCase();
+    
+    words.forEach(word => {
+      if (title.includes(word)) score += 10;
+      if (description.includes(word)) score += 5;
+      if (post.category && post.category.toLowerCase().includes(word)) score += 3;
+      if (post.tags && post.tags.some(tag => tag.toLowerCase().includes(word))) score += 2;
+    });
+    
+    return score;
+  }
+  
+  // Search function
+  function performSearch(query) {
+    if (!query || query.length < 2) {
+      resetSearch();
+      return;
+    }
+    
+    isSearching = true;
+    clearButton.classList.remove('hidden');
+    
+    // Perform search
+    const results = searchPosts(query);
+    
+    // Update summary
+    searchSummary.textContent = `Found ${results.length} ${results.length === 1 ? 'post' : 'posts'} matching "${query}"`;
+    searchSummary.classList.remove('hidden');
+    
+    // Display results
+    if (blogGrid) {
+      displayGridResults(results);
+    } else if (archiveList) {
+      displayListResults(results);
+    }
+  }
+  
+  // Reset search
+  function resetSearch() {
+    isSearching = false;
+    clearButton.classList.add('hidden');
+    searchSummary.classList.add('hidden');
+    searchInput.value = '';
+    
+    if (blogGrid && originalContent) {
+      blogGrid.innerHTML = originalContent;
+    } else if (archiveList && originalContent) {
+      archiveList.innerHTML = originalContent;
+    }
+  }
+  
+  // Display results in grid format
+  function displayGridResults(results) {
+    if (!blogGrid) return;
+    
+    if (results.length === 0) {
+      blogGrid.innerHTML = `
+        <div class="col-span-full text-center py-12">
+          <p class="text-gray-500 text-lg">No posts found. Try a different search term.</p>
+        </div>
+      `;
+      return;
+    }
+    
+    const resultsHtml = results.map(result => {
+      const post = result.item;
+      const date = new Date(post.date);
+      
+      return `
+        <article class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow">
+          <div class="relative w-full bg-gradient-to-br from-wbs-blue to-blue-900" style="padding-bottom: 56.76%;">
+            <div class="absolute inset-0 flex items-center justify-center">
+              <span class="text-white text-6xl font-bold opacity-20">WBS</span>
+            </div>
+          </div>
+          <div class="p-6">
+            <div class="flex items-center gap-4 text-sm text-gray-500 mb-2">
+              <time datetime="${date.toISOString()}">
+                ${date.toLocaleDateString()}
+              </time>
+              ${post.category ? `
+                <span>•</span>
+                <span>${post.category}</span>
+              ` : ''}
+            </div>
+            <h2 class="text-xl font-semibold mb-2">
+              <a href="/blog/${post.slug}" class="text-gray-900 hover:text-orange-500 transition-colors">
+                ${post.title}
+              </a>
+            </h2>
+            <p class="text-gray-600 mb-4 line-clamp-3">${post.description}</p>
+            <div class="flex items-center justify-between">
+              <a href="/blog/${post.slug}" class="text-orange-500 hover:text-blue-950 font-medium">
+                Read More →
+              </a>
+              ${post.tags && post.tags.length > 0 ? `
+                <div class="flex gap-2">
+                  ${post.tags.slice(0, 2).map(tag => `
+                    <span class="text-xs bg-gray-100 text-gray-600 px-2 py-1 rounded">
+                      ${tag}
+                    </span>
+                  `).join('')}
+                </div>
+              ` : ''}
+            </div>
+          </div>
+        </article>
+      `;
+    }).join('');
+    
+    blogGrid.innerHTML = resultsHtml;
+  }
+  
+  // Display results in list format
+  function displayListResults(results) {
+    if (!archiveList) return;
+    
+    if (results.length === 0) {
+      archiveList.innerHTML = `
+        <div class="text-center py-12">
+          <p class="text-gray-500 text-lg">No posts found. Try a different search term.</p>
+        </div>
+      `;
+      return;
+    }
+    
+    const resultsHtml = `
+      <div class="mb-12">
+        <h2 class="text-2xl font-bold text-gray-900 mb-6 pb-2 border-b border-gray-200">
+          Search Results
+        </h2>
+        <div class="space-y-4">
+          ${results.map(result => {
+            const post = result.item;
+            const date = new Date(post.date);
+            
+            return `
+              <article class="flex flex-col sm:flex-row sm:items-start sm:justify-between py-4 border-b border-gray-100 last:border-0">
+                <div class="flex-1">
+                  <h3 class="text-lg font-semibold mb-1">
+                    <a href="/blog/${post.slug}" class="text-gray-900 hover:text-orange-500 transition-colors">
+                      ${post.title}
+                    </a>
+                  </h3>
+                  <p class="text-gray-600 text-sm mb-2">${post.description}</p>
+                  <div class="flex items-center gap-4 text-sm text-gray-500">
+                    <time datetime="${date.toISOString()}">
+                      ${date.toLocaleDateString('en-GB', { 
+                        day: 'numeric', 
+                        month: 'long', 
+                        year: 'numeric' 
+                      })}
+                    </time>
+                    ${post.category ? `
+                      <span>•</span>
+                      <span>${post.category}</span>
+                    ` : ''}
+                  </div>
+                </div>
+                <a href="/blog/${post.slug}" class="text-orange-500 hover:text-blue-950 font-medium mt-2 sm:mt-0 sm:ml-4 shrink-0">
+                  Read →
+                </a>
+              </article>
+            `;
+          }).join('')}
+        </div>
+      </div>
+    `;
+    
+    archiveList.innerHTML = resultsHtml;
+  }
+  
+  // Event listeners
+  if (searchInput) {
+    searchInput.addEventListener('input', (e) => {
+      const query = e.target.value.trim();
+      performSearch(query);
+    });
+  }
+  
+  if (clearButton) {
+    clearButton.addEventListener('click', () => {
+      resetSearch();
+    });
+  }
+  
+  // Handle keyboard shortcuts
+  document.addEventListener('keydown', (e) => {
+    // Ctrl/Cmd + K to focus search
+    if ((e.ctrlKey || e.metaKey) && e.key === 'k') {
+      e.preventDefault();
+      searchInput.focus();
+    }
+    
+    // Escape to clear search
+    if (e.key === 'Escape' && isSearching) {
+      resetSearch();
+    }
+  });
+</script>
+
+<style>
+  .line-clamp-3 {
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+  }
+  
+  kbd {
+    font-family: 'Consolas', 'Monaco', 'Courier New', monospace;
+  }
+</style>
