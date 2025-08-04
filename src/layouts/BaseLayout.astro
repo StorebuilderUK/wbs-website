@@ -1,5 +1,6 @@
 ---
 import PhoneBar from '../components/PhoneBar.astro';
+import { ViewTransitions } from 'astro:transitions';
 
 export interface Props {
   title: string;
@@ -40,6 +41,14 @@ const { title, description = 'We Build Stores - Professional Web Design & SEO Se
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- View Transitions -->
+    <ViewTransitions />
+    
+    <!-- Custom Transition Styles -->
+    <style>
+      @import '../styles/transitions.css';
+    </style>
   </head>
   <body class="min-h-screen bg-white text-gray-900">
     <PhoneBar />

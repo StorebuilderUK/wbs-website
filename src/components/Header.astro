@@ -3,7 +3,7 @@ import { Image } from 'astro:assets';
 import logo from '../assets/logo.png';
 ---
 
-<header class="bg-white shadow-sm sticky top-0 z-50">
+<header class="bg-white shadow-sm sticky top-0 z-50" transition:persist>
   <!-- Top Bar -->
   <div class="bg-gray-900 text-white text-sm">
     <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
@@ -50,8 +50,8 @@ import logo from '../assets/logo.png';
         <div class="flex items-center">
           <!-- Logo -->
           <a href="/" class="flex items-center gap-3">
-            <Image src={logo} alt="We Build Stores" class="h-14 w-14" width={56} height={56} />
-            <span class="text-2xl font-bold">
+            <Image src={logo} alt="We Build Stores" class="h-14 w-14" width={56} height={56} transition:name="logo" />
+            <span class="text-2xl font-bold" transition:name="logo-text">
               <span class="text-gray-900">We Build</span>
               <span class="text-orange-500"> Stores</span>
             </span>
@@ -60,7 +60,7 @@ import logo from '../assets/logo.png';
         
         <!-- Desktop Navigation -->
         <div class="hidden md:flex items-center space-x-8">
-          <a href="/" class="text-gray-700 hover:text-orange-500 px-3 py-2 text-sm font-medium">
+          <a href="/" class="text-gray-700 hover:text-orange-500 px-3 py-2 text-sm font-medium" data-astro-prefetch>
             Home
           </a>
           <div class="relative group">
@@ -81,7 +81,7 @@ import logo from '../assets/logo.png';
               </div>
             </div>
           </div>
-          <a href="/blog" class="text-gray-700 hover:text-orange-500 px-3 py-2 text-sm font-medium">
+          <a href="/blog" class="text-gray-700 hover:text-orange-500 px-3 py-2 text-sm font-medium" data-astro-prefetch>
             Blog
           </a>
           <div class="relative group">
@@ -96,18 +96,18 @@ import logo from '../assets/logo.png';
             </button>
             <div class="absolute left-0 mt-2 w-64 rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200">
               <div class="py-1">
-                <a href="/trades-growth" class="block px-4 py-3 text-sm text-gray-700 hover:bg-gray-100 hover:text-orange-500">
+                <a href="/trades-growth" class="block px-4 py-3 text-sm text-gray-700 hover:bg-gray-100 hover:text-orange-500" data-astro-prefetch>
                   <div class="font-semibold">Trades Growth</div>
                   <div class="text-xs text-gray-500">For local tradespeople • From £49/mo</div>
                 </a>
-                <a href="/business-growth-package" class="block px-4 py-3 text-sm text-gray-700 hover:bg-gray-100 hover:text-orange-500">
+                <a href="/business-growth-package" class="block px-4 py-3 text-sm text-gray-700 hover:bg-gray-100 hover:text-orange-500" data-astro-prefetch>
                   <div class="font-semibold">Business Intelligence</div>
                   <div class="text-xs text-gray-500">For established SMEs • From £330/mo</div>
                 </a>
               </div>
             </div>
           </div>
-          <a href="/about-us" class="text-gray-700 hover:text-orange-500 px-3 py-2 text-sm font-medium">
+          <a href="/about-us" class="text-gray-700 hover:text-orange-500 px-3 py-2 text-sm font-medium" data-astro-prefetch>
             About
           </a>
           <a href="https://conductor.webuildstores.co.uk" class="text-gray-700 hover:text-orange-500 px-3 py-2 text-sm font-medium inline-flex items-center">
@@ -116,7 +116,7 @@ import logo from '../assets/logo.png';
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path>
             </svg>
           </a>
-          <a href="/contact" class="bg-orange-500 text-white px-6 py-2 rounded text-sm font-medium hover:bg-blue-950 transition-colors">
+          <a href="/contact" class="bg-orange-500 text-white px-6 py-2 rounded text-sm font-medium hover:bg-blue-950 transition-colors" data-astro-prefetch>
             Get Started
           </a>
         </div>
