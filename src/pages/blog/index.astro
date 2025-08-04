@@ -4,6 +4,8 @@ import Header from '../../components/Header.astro';
 import Footer from '../../components/Footer.astro';
 import BlogSearch from '../../components/BlogSearch.astro';
 import { getCollection } from 'astro:content';
+import { getBlogImage } from '../../utils/blog-images';
+import { Image } from 'astro:assets';
 
 // Get all blog posts
 const allPosts = await getCollection('blog');
@@ -58,17 +60,28 @@ const posts = featuredPosts.sort((a, b) => new Date(b.data.pubDate).valueOf() - 
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 blog-grid">
           {posts.map((post) => (
             <article class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow">
-              {post.data.heroImage && (
+              {getBlogImage(post.data.heroImage) && (
                 <div class="relative w-full overflow-hidden bg-gray-200" style="padding-bottom: 56.76%;">
-                  <img 
-                    src={post.data.heroImage} 
-                    alt={post.data.title}
-                    class="absolute inset-0 w-full h-full object-cover object-center"
-                    loading="lazy"
-                  />
+                  {typeof getBlogImage(post.data.heroImage) === 'string' ? (
+                    <img 
+                      src={getBlogImage(post.data.heroImage)} 
+                      alt={post.data.title}
+                      class="absolute inset-0 w-full h-full object-cover object-center"
+                      loading="lazy"
+                    />
+                  ) : (
+                    <Image 
+                      src={getBlogImage(post.data.heroImage)} 
+                      alt={post.data.title}
+                      class="absolute inset-0 w-full h-full object-cover object-center"
+                      loading="lazy"
+                      width={740}
+                      height={420}
+                    />
+                  )}
                 </div>
               )}
-              {!post.data.heroImage && (
+              {!getBlogImage(post.data.heroImage) && (
                 <div class="relative w-full bg-gradient-to-br from-wbs-blue to-blue-900" style="padding-bottom: 56.76%;">
                   <div class="absolute inset-0 flex items-center justify-center">
                     <span class="text-white text-6xl font-bold opacity-20">WBS</span>
