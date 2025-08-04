@@ -1,3 +1,8 @@
+---
+title: "EKM Review - UK Ecommerce Platform Honest Assessment"
+description: "Comprehensive EKM review for UK businesses. Compare features, pricing, and alternatives for your ecommerce needs. Expert insights included."
+---
+
 # EKM Review - A Comprehensive Look at the EKM eCommerce Platform
  * [Top of Page](https://www.webuildstores.co.uk/ekm-review)
  * [Themes & Templates](https://www.webuildstores.co.uk/ekm-review)

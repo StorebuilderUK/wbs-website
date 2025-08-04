@@ -1,3 +1,8 @@
+---
+title: "Shopify Review - UK Ecommerce Platform Analysis"
+description: "In-depth Shopify review for UK businesses. Features, pricing, pros and cons analysed by ecommerce experts. Is Shopify right for you?"
+---
+
 # Shopify Review: The Easy To Use eCommerce Website Builder
  * [Top Of Page](https://www.webuildstores.co.uk/shopify-review)
  * [Shopify Review](https://www.webuildstores.co.uk/shopify-review)

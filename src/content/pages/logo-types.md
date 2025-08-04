@@ -1,3 +1,8 @@
+---
+title: "Logo Design Types - Choose the Right Style"
+description: "Explore different logo types and styles for your business. Wordmarks, lettermarks, pictorial marks and more explained by design experts."
+---
+
 # Logo And Website Design UK
 # How many types of logo are there and which one is right for you?
 # Essentially there are 7 types of logo, although some might assert that there are more, and in simple terms, the main ones are as follows (in no particular order):

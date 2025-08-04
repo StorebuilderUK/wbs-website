@@ -1,3 +1,8 @@
+---
+title: "Magento Website Design - Enterprise Ecommerce Solutions"
+description: "Professional Magento development for serious ecommerce businesses. Custom themes, extensions and integrations by certified developers."
+---
+
 # Expert Magento Website Design Services
 # Magento Website Design Company
 ## Hire The Magento Experts For Your Next Website Design Project

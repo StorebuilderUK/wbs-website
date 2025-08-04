@@ -1,3 +1,8 @@
+---
+title: "Blog - Digital Marketing Insights & Business Growth Tips"
+description: "Expert insights on web design, SEO, and digital marketing strategies. Real-world advice from 25+ years helping UK businesses succeed online."
+---
+
 # Digital Marketing Blog By We Build Stores Telford
 # Tony's Digital Marketing Blog
 ## Let's Create Your Digital Masterpiece!

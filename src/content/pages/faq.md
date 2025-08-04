@@ -1,3 +1,8 @@
+---
+title: "FAQ - Common Questions About Our Services"
+description: "Find answers to frequently asked questions about our web design, SEO, and digital marketing services. Pricing, timelines, and process explained."
+---
+
 # Frequently Asked Questions About Our Pay Monthly Websites
 # Support Centre
 ## Get The Answers To Frequently Asked Questions

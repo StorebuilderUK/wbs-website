@@ -1,3 +1,8 @@
+---
+title: "About We Build Stores - 25+ Years Digital Excellence"
+description: "Discover our story, mission and commitment to helping UK businesses thrive online. Based in Telford, serving nationwide with proven digital growth strategies."
+---
+
 # About We Build Stores
 # Digital Marketing Expert
 ## Web Design Made Locally In Telford, Shropshire For A Global Audience

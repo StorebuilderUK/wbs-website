@@ -1,3 +1,8 @@
+---
+title: "Incidental Graphics - Quick Design Solutions"
+description: "Fast turnaround graphic design for social media posts, web banners, and marketing materials. Professional designs that enhance your brand."
+---
+
 # Unique And Memorable Logo And Branding Design UK By We Build Stores
 # Incidental Graphics
 Incidental graphics on a website is what seasoning is to food

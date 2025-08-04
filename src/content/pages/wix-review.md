@@ -1,3 +1,8 @@
+---
+title: "Wix Review - Website Builder Honest Assessment"
+description: "Comprehensive Wix review by web design experts. Features, pricing, limitations and alternatives explored. Is Wix right for your business?"
+---
+
 # Wix Review: The Website Builder That Creates Beautiful Websites
  * [Top Of Page](https://www.webuildstores.co.uk/wix-review)
  * [Wix Review](https://www.webuildstores.co.uk/wix-review)

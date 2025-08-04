@@ -1,3 +1,8 @@
+---
+title: "Professional Blog Writing Services - We Build Stores"
+description: "Engage your audience with expert blog content that drives traffic and builds authority. SEO-optimised articles included in all growth packages from £49/month."
+---
+
 # Professional Blog Writing Services | We Build Stores, Telford, UK
 # Professional Blog Writing Services
 ## Up The Ante By Adding Expertly Written Blog Content To Your Website

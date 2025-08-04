@@ -1,3 +1,8 @@
+---
+title: "SEO Copywriting Services - Content That Ranks"
+description: "Expert SEO copywriting that balances search visibility with reader engagement. Get content that ranks well and converts visitors into customers."
+---
+
 # Top SEO Company Telford - Expert Services Available
 # Hire An SEO Company Telford
 ## SEO Made Locally In Telford, Shropshire For A Global Audience

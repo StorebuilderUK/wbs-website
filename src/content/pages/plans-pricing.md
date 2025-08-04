@@ -1,3 +1,8 @@
+---
+title: "Plans & Pricing - Growth Packages From £49/Month"
+description: "Transparent pricing for web design, SEO and digital marketing services. Choose from Trades packages (£49-£149) or Business Intelligence (£330-£995)."
+---
+
 # Pay Monthly Plans And Pricing Table | We Build Stores
 Put My Crackerjack Digital Marketing Team To Work On Your Next Project!
 [Get Started](https://www.webuildstores.co.uk/contact)

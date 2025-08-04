@@ -1,3 +1,8 @@
+---
+title: "Professional Graphic Design Services - We Build Stores"
+description: "Eye-catching graphic design for digital and print. Logos, banners, social media graphics and more. Standalone service or included with packages."
+---
+
 # Graphic Design Telford. Custom Graphics & Logos For Your Website
 # Graphic Design Telford
 ## Graphic Design Made Locally In Telford, Shropshire For A Global Audience

@@ -1,3 +1,8 @@
+---
+title: "Ecommerce Website Design Telford - We Build Stores"
+description: "Professional ecommerce website design services in Telford. Mobile-friendly online stores that convert visitors into customers. From £595/month."
+---
+
 # Beautiful eCommerce Website Design By We Build Stores
 # eCommerce Website Design Telford
 ## eCommerce Websites Made Locally In Telford, Shropshire For A Global Audience

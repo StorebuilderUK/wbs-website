@@ -1,0 +1,38 @@
+Route,Title,Description,Status,File
+/,Professional Web Design & SEO Services,"We Build Stores offers expert web design, ecommerce development, and SEO services. 25+ years of experience helping businesses grow online.",OK,src/pages/index.astro
+/about,About Us - We Build Stores,"Learn about We Build Stores, our team, and our 25+ years of experience helping businesses grow online.",OK,src/pages/about.astro
+/services,Our Services - Web Design SEO & Digital Marketing,"Explore our comprehensive range of digital services including web design, ecommerce development, SEO, content writing, and more.",OK,src/pages/services.astro
+/contact,Contact Us,"Get in touch with We Build Stores for web design, SEO, and digital marketing services.",OK,src/pages/contact.astro
+/contact-success,Thank You - We Build Stores,Thank you for contacting We Build Stores. We,TRUNCATED,src/pages/contact-success.astro
+/blog/,Blog - Web Design & SEO Insights,"Expert insights on web design, SEO, and digital marketing to help your business grow online.",OK,src/pages/blog/index.astro
+/blog/archive,Blog Archive - All Posts,Complete archive of all blog posts from We Build Stores.,OK,src/pages/blog/archive.astro
+/business-growth-package,No title found,No description found,MISSING META,src/pages/business-growth-package.astro
+/about-us,No title found,No description found,MISSING META,src/content/pages/about-us.md
+/blog-writing,No title found,No description found,MISSING META,src/content/pages/blog-writing.md
+/content-writing-services,Professional Content Writing Services,"Engaging content that drives traffic and converts visitors. Content writing is included in all our growth packages from £49/month.",OK,src/content/pages/content-writing-services.md
+/ecommerce-website-design-telford,No title found,No description found,MISSING META,src/content/pages/ecommerce-website-design-telford.md
+/ekm-review,No title found,No description found,MISSING META,src/content/pages/ekm-review.md
+/faq,No title found,No description found,MISSING META,src/content/pages/faq.md
+/file-share,No title found,No description found,MISSING META,src/content/pages/file-share.md
+/google-my-business,No title found,No description found,MISSING META,src/content/pages/google-my-business.md
+/graphic-design,No title found,No description found,MISSING META,src/content/pages/graphic-design.md
+/incidental-graphics,No title found,No description found,MISSING META,src/content/pages/incidental-graphics.md
+/logo-design,Professional Logo Design Services,"Create a memorable brand identity with custom logo design. Standalone service or included with website packages. From £249.",OK,src/content/pages/logo-design.md
+/logo-types,No title found,No description found,MISSING META,src/content/pages/logo-types.md
+/magento-website-design,No title found,No description found,MISSING META,src/content/pages/magento-website-design.md
+/pay-monthly-websites,No title found,No description found,MISSING META,src/content/pages/pay-monthly-websites.md
+/pay-per-click,Pay Per Click (PPC) Management Services,"Get instant visibility and qualified leads with expertly managed PPC campaigns. Premium add-on service for businesses ready to scale fast.",OK,src/content/pages/pay-per-click.md
+/payment-request-page,No title found,No description found,MISSING META,src/content/pages/payment-request-page.md
+/plans-pricing,No title found,No description found,MISSING META,src/content/pages/plans-pricing.md
+/promotional-videos,No title found,No description found,MISSING META,src/content/pages/promotional-videos.md
+/seo-campaign-management,SEO Campaign Management Services,"Drive organic traffic and dominate search results with our managed SEO campaigns. Included in all growth packages from £49/month.",OK,src/content/pages/seo-campaign-management.md
+/seo-copywriting,No title found,No description found,MISSING META,src/content/pages/seo-copywriting.md
+/shopify-review,No title found,No description found,MISSING META,src/content/pages/shopify-review.md
+/shopify-website-design,No title found,No description found,MISSING META,src/content/pages/shopify-website-design.md
+/social-media-plans,Social Media Management Services,"Build your brand and engage customers with professional social media management. Included in all growth packages from £49/month.",OK,src/content/pages/social-media-plans.md
+/store,No title found,No description found,MISSING META,src/content/pages/store.md
+/website-design,Professional Website Design Services,"Get a stunning, mobile-friendly website that drives results. From £49/month for trades or custom solutions for established businesses.",OK,src/content/pages/website-design.md
+/website-development,No title found,No description found,MISSING META,src/content/pages/website-development.md
+/website-redesign,No title found,No description found,MISSING META,src/content/pages/website-redesign.md
+/wix-review,No title found,No description found,MISSING META,src/content/pages/wix-review.md
+/wix-website-design,No title found,No description found,MISSING META,src/content/pages/wix-website-design.md

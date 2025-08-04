@@ -1,3 +1,8 @@
+---
+title: "We Build Stores - Web Design & Digital Marketing Telford"
+description: "Transform your business with professional web design, SEO and digital marketing. 25+ years experience, 100% money-back guarantee. From £49/month."
+---
+
 # Boost Your Presence with Digital Agency Marketing Telford
 Put My Crackerjack Digital Marketing Team To Work On Your Next Project!
 [Get Started](https://www.webuildstores.co.uk/contact)

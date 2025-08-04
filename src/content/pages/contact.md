@@ -1,3 +1,8 @@
+---
+title: "Contact We Build Stores - Get Your Free Consultation"
+description: "Ready to grow your business online? Contact our Telford team for web design, SEO and digital marketing services. Free consultation available."
+---
+
 # Contact Details For We Buld Stores - Get In Touch!
 Put My Crackerjack Digital Marketing Skills To Work On Your Next Project!
 [Get Started](https://www.webuildstores.co.uk/contact)

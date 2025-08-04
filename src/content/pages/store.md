@@ -1,3 +1,8 @@
+---
+title: "Client Store - Premium Business Resources"
+description: "Exclusive resources and tools for We Build Stores clients. Access premium templates, guides and business growth materials."
+---
+
 # Buy Media Design From We Build Stores
 # Media Store
 ## Buy Logos, Print Designs And One-Off Products

@@ -1,3 +1,8 @@
+---
+title: "Wix Website Design Services - Professional Wix Experts"
+description: "Get a stunning Wix website designed by certified experts. Custom designs, SEO setup and training included. Transform your Wix site today."
+---
+
 # Wix Website Design Company By We Build Stores, Telford UK
 # Wix Website Design Company
 ## Hire The Experts For Your Next Wix Website Design Project
