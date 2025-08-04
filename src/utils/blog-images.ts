@@ -5,6 +5,7 @@ import agentDreamTeam from '../assets/images/blog/agent-dream-team.jpg';
 import aiContentStrategy from '../assets/images/blog/ai-content-strategy.jpg';
 import algorithmComesForYourBusiness from '../assets/images/blog/algorithm-comes-for-your-business.jpg';
 import amateurWebsiteDesign from '../assets/images/blog/amateur-website-design.jpg';
+import becomeTheWebsiteCopywritingSuperheroYourCompanyNeeds from '../assets/images/blog/become-the-website-copywriting-superhero-your-company-needs.jpg';
 import beyondPyjamas from '../assets/images/blog/beyond-pyjamas.jpg';
 import buildingAnAiMarketingStrategy from '../assets/images/blog/building-an-ai-marketing-strategy.jpg';
 import canAiWritingToolsMakeYouABetterWriter from '../assets/images/blog/can-ai-writing-tools-make-you-a-better-writer.jpg';
@@ -48,6 +49,7 @@ export const blogImages: Record<string, any> = {
   'ai-content-strategy': aiContentStrategy,
   'algorithm-comes-for-your-business': algorithmComesForYourBusiness,
   'amateur-website-design': amateurWebsiteDesign,
+  'become-the-website-copywriting-superhero-your-company-needs': becomeTheWebsiteCopywritingSuperheroYourCompanyNeeds,
   'beyond-pyjamas': beyondPyjamas,
   'building-an-ai-marketing-strategy': buildingAnAiMarketingStrategy,
   'can-ai-writing-tools-make-you-a-better-writer': canAiWritingToolsMakeYouABetterWriter,
