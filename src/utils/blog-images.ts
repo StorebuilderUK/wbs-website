@@ -37,7 +37,6 @@ import ukShopifyShipping from '../assets/images/blog/uk-shopify-shipping.jpg';
 import wixEcommerceDesign from '../assets/images/blog/wix-ecommerce-design.jpg';
 import wixForSmallBusinesses from '../assets/images/blog/wix-for-small-businesses.jpg';
 import wixWebsiteDesignTips from '../assets/images/blog/wix-website-design-tips.jpg';
-import your169PathwayToSuccess from '../assets/images/blog/your-169-pathway-to-success.jpg';
 
 // Create a map of hero image slugs to imported images
 export const blogImages: Record<string, any> = {
@@ -79,7 +78,6 @@ export const blogImages: Record<string, any> = {
   'wix-ecommerce-design': wixEcommerceDesign,
   'wix-for-small-businesses': wixForSmallBusinesses,
   'wix-website-design-tips': wixWebsiteDesignTips,
-  'your-169-pathway-to-success': your169PathwayToSuccess,
 };
 
 // Helper function to get blog image
