@@ -13,7 +13,8 @@ const allPosts = await getCollection('blog');
 // Filter for high-value posts (AI, personal stories, recent insights)
 const featuredPosts = allPosts.filter(post => {
   const year = new Date(post.data.pubDate).getFullYear();
-  const isRecent = year >= 2024;
+  const currentYear = new Date().getFullYear();
+  const isRecent = year >= currentYear - 1; // Show posts from last 2 years
   const isHighValue = 
     post.data.title.toLowerCase().includes('ai') ||
     post.data.title.toLowerCase().includes('django') ||

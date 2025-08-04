@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog Comparison - Wix vs Netlify</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            overflow: hidden;
+        }
+        .container {
+            display: flex;
+            height: 100vh;
+        }
+        .side {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            border: 2px solid #333;
+        }
+        .side.wix {
+            border-color: #0C6EFC;
+        }
+        .side.netlify {
+            border-color: #00C7B7;
+        }
+        .header {
+            background: #f0f0f0;
+            padding: 10px;
+            text-align: center;
+            font-weight: bold;
+            flex-shrink: 0;
+        }
+        .wix .header {
+            background: #0C6EFC;
+            color: white;
+        }
+        .netlify .header {
+            background: #00C7B7;
+            color: white;
+        }
+        iframe {
+            flex: 1;
+            width: 100%;
+            border: none;
+        }
+        .controls {
+            background: #333;
+            color: white;
+            padding: 15px;
+            text-align: center;
+            display: flex;
+            gap: 20px;
+            align-items: center;
+            justify-content: center;
+        }
+        select {
+            padding: 8px;
+            font-size: 16px;
+            border-radius: 4px;
+            border: 1px solid #ccc;
+        }
+        button {
+            padding: 8px 16px;
+            font-size: 16px;
+            cursor: pointer;
+            background: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 4px;
+        }
+        button:hover {
+            background: #45a049;
+        }
+        .info {
+            font-size: 14px;
+            color: #ddd;
+        }
+    </style>
+</head>
+<body>
+    <div class="controls">
+        <label for="postSelect">Select Blog Post:</label>
+        <select id="postSelect">
+            <option value="">-- Choose a post --</option>
+            <option value="wix-for-small-businesses">Wix for Small Businesses</option>
+            <option value="advanced-wix-website-design">Advanced Wix Website Design</option>
+            <option value="how-much-does-a-wix-website-cost-to-build">How Much Does a Wix Website Cost</option>
+            <option value="how-to-write-amazing-copy-that-sells-like-mad-men-s-don-draper">How to Write Amazing Copy</option>
+            <option value="mastering-wix-business-website-creation">Mastering Wix Business Website</option>
+            <option value="project-management-guide">Project Management Guide</option>
+            <option value="agent-dream-team">Agent Dream Team</option>
+            <option value="multi-channel-selling">Multi-Channel Selling</option>
+            <option value="amateur-website-design">Amateur Website Design</option>
+            <option value="ai-content-strategy">AI Content Strategy</option>
+            <option value="seasonal-website-design-boost-user-engagement">Seasonal Website Design</option>
+            <option value="effortless-business-growth">Effortless Business Growth</option>
+            <option value="uk-shopify-shipping">UK Shopify Shipping</option>
+            <option value="the-cost-of-building-a-website-how-to-get-an-accurate-quote">Cost of Building a Website</option>
+            <option value="facebook-lead-generation">Facebook Lead Generation</option>
+            <option value="pre-made-trades-logos">Pre-Made Trades Logos</option>
+        </select>
+        <button onclick="loadPost()">Load Post</button>
+        <div class="info">Tip: Use browser screenshot tools to capture both sides</div>
+    </div>
+    
+    <div class="container">
+        <div class="side wix">
+            <div class="header">WIX Site</div>
+            <iframe id="wixFrame" src="about:blank"></iframe>
+        </div>
+        <div class="side netlify">
+            <div class="header">NETLIFY Site</div>
+            <iframe id="netlifyFrame" src="about:blank"></iframe>
+        </div>
+    </div>
+    
+    <script>
+        function loadPost() {
+            const select = document.getElementById('postSelect');
+            const slug = select.value;
+            
+            if (!slug) {
+                alert('Please select a blog post');
+                return;
+            }
+            
+            const wixUrl = `https://webuildstores.wixsite.com/website/post/${slug}`;
+            const netlifyUrl = `https://webuildstores.netlify.app/blog/${slug}`;
+            
+            document.getElementById('wixFrame').src = wixUrl;
+            document.getElementById('netlifyFrame').src = netlifyUrl;
+        }
+        
+        // Allow loading via URL parameter
+        const urlParams = new URLSearchParams(window.location.search);
+        const postSlug = urlParams.get('post');
+        if (postSlug) {
+            document.getElementById('postSelect').value = postSlug;
+            loadPost();
+        }
+    </script>
+</body>
+</html>
