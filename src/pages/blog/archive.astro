@@ -4,6 +4,8 @@ import Header from '../../components/Header.astro';
 import Footer from '../../components/Footer.astro';
 import BlogSearch from '../../components/BlogSearch.astro';
 import { getCollection } from 'astro:content';
+import { getBlogImage } from '../../utils/blog-images';
+import { Image } from 'astro:assets';
 
 // Get all blog posts
 const allPosts = await getCollection('blog');
@@ -54,14 +56,44 @@ const years = Object.keys(postsByYear).sort((a, b) => Number(b) - Number(a));
             </h2>
             <div class="space-y-4">
               {postsByYear[Number(year)].map((post) => (
-                <article class="flex flex-col sm:flex-row sm:items-start sm:justify-between py-4 border-b border-gray-100 last:border-0">
-                  <div class="flex-1">
+                <article class="flex gap-4 py-4 border-b border-gray-100 last:border-0">
+                  {/* Thumbnail */}
+                  <a href={`/blog/${post.slug}`} class="shrink-0 block">
+                    {getBlogImage(post.data.heroImage) ? (
+                      <div class="w-24 h-16 rounded overflow-hidden bg-gray-200">
+                        {typeof getBlogImage(post.data.heroImage) === 'string' ? (
+                          <img 
+                            src={getBlogImage(post.data.heroImage)} 
+                            alt={post.data.title}
+                            class="w-full h-full object-cover"
+                            loading="lazy"
+                          />
+                        ) : (
+                          <Image 
+                            src={getBlogImage(post.data.heroImage)} 
+                            alt={post.data.title}
+                            class="w-full h-full object-cover"
+                            loading="lazy"
+                            width={96}
+                            height={64}
+                          />
+                        )}
+                      </div>
+                    ) : (
+                      <div class="w-24 h-16 rounded bg-gradient-to-br from-wbs-blue to-blue-900 flex items-center justify-center">
+                        <span class="text-white text-xs font-bold opacity-50">WBS</span>
+                      </div>
+                    )}
+                  </a>
+                  
+                  {/* Content */}
+                  <div class="flex-1 min-w-0">
                     <h3 class="text-lg font-semibold mb-1">
                       <a href={`/blog/${post.slug}`} class="text-gray-900 hover:text-orange-500 transition-colors">
                         {post.data.title}
                       </a>
                     </h3>
-                    <p class="text-gray-600 text-sm mb-2">{post.data.description}</p>
+                    <p class="text-gray-600 text-sm mb-2 line-clamp-2">{post.data.description}</p>
                     <div class="flex items-center gap-4 text-sm text-gray-500">
                       <time datetime={new Date(post.data.pubDate).toISOString()}>
                         {new Date(post.data.pubDate).toLocaleDateString('en-GB', { 
@@ -78,7 +110,9 @@ const years = Object.keys(postsByYear).sort((a, b) => Number(b) - Number(a));
                       )}
                     </div>
                   </div>
-                  <a href={`/blog/${post.slug}`} class="text-orange-500 hover:text-blue-950 font-medium mt-2 sm:mt-0 sm:ml-4 shrink-0">
+                  
+                  {/* Read link */}
+                  <a href={`/blog/${post.slug}`} class="text-orange-500 hover:text-blue-950 font-medium self-center shrink-0">
                     Read →
                   </a>
                 </article>
@@ -98,5 +132,29 @@ const years = Object.keys(postsByYear).sort((a, b) => Number(b) - Number(a));
   /* Archive specific styles */
   article:hover h3 a {
     color: #ff6b35;
+  }
+  
+  /* Line clamp utility */
+  .line-clamp-2 {
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 640px) {
+    article {
+      flex-direction: column;
+    }
+    
+    article > a:first-child {
+      width: 100%;
+    }
+    
+    article .w-24 {
+      width: 100%;
+      height: 200px;
+    }
   }
 </style>
