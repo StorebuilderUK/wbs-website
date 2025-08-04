@@ -30,6 +30,7 @@ import projectManagementGuide from '../assets/images/blog/project-management-gui
 import pythonDjangoAndReactJsCode from '../assets/images/blog/python-django-and-react-js-code.jpg';
 import seasonalWebsiteDesignBoostUserEngagement from '../assets/images/blog/seasonal-website-design-boost-user-engagement.jpg';
 import smallBusinessGrowthMadeEasy from '../assets/images/blog/small-business-growth-made-easy.jpg';
+import smallBusinessSeoServices from '../assets/images/blog/small-business-seo-services.jpg';
 import theArtOfSearchEngineOptimisation from '../assets/images/blog/the-art-of-search-engine-optimisation.jpg';
 import theBestMobileCreditCardMachinesForUkSmallBusiness from '../assets/images/blog/the-best-mobile-credit-card-machines-for-uk-small-business.jpg';
 import theCostOfBuildingAWebsiteHowToGetAnAccurateQuote from '../assets/images/blog/the-cost-of-building-a-website-how-to-get-an-accurate-quote.jpg';
@@ -72,6 +73,7 @@ export const blogImages: Record<string, any> = {
   'python-django-and-react-js-code': pythonDjangoAndReactJsCode,
   'seasonal-website-design-boost-user-engagement': seasonalWebsiteDesignBoostUserEngagement,
   'small-business-growth-made-easy': smallBusinessGrowthMadeEasy,
+  'small-business-seo-services': smallBusinessSeoServices,
   'the-art-of-search-engine-optimisation': theArtOfSearchEngineOptimisation,
   'the-best-mobile-credit-card-machines-for-uk-small-business': theBestMobileCreditCardMachinesForUkSmallBusiness,
   'the-cost-of-building-a-website-how-to-get-an-accurate-quote': theCostOfBuildingAWebsiteHowToGetAnAccurateQuote,
