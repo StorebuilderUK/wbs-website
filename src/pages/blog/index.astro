@@ -91,7 +91,7 @@ const posts = featuredPosts.sort((a, b) => new Date(b.data.pubDate).valueOf() - 
               <div class="p-6">
                 <div class="flex items-center gap-4 text-sm text-gray-500 mb-2">
                   <time datetime={new Date(post.data.pubDate).toISOString()}>
-                    {new Date(post.data.pubDate).toLocaleDateString()}
+                    {new Date(post.data.pubDate).toLocaleDateString('en-GB')}
                   </time>
                   {post.data.category && (
                     <>

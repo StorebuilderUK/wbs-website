@@ -98,11 +98,7 @@ const years = Object.keys(postsByYear).sort((a, b) => Number(b) - Number(a));
                     <p class="text-gray-600 text-sm mb-2 line-clamp-2">{post.data.description}</p>
                     <div class="flex items-center gap-4 text-sm text-gray-500">
                       <time datetime={new Date(post.data.pubDate).toISOString()}>
-                        {new Date(post.data.pubDate).toLocaleDateString('en-GB', { 
-                          day: 'numeric', 
-                          month: 'long', 
-                          year: 'numeric' 
-                        })}
+                        {new Date(post.data.pubDate).toLocaleDateString('en-GB')}
                       </time>
                       {post.data.category && (
                         <>

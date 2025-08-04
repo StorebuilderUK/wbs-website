@@ -177,7 +177,7 @@ const searchData = posts.map(post => ({
           <div class="p-6">
             <div class="flex items-center gap-4 text-sm text-gray-500 mb-2">
               <time datetime="${date.toISOString()}">
-                ${date.toLocaleDateString()}
+                ${date.toLocaleDateString('en-GB')}
               </time>
               ${post.category ? `
                 <span>•</span>
@@ -246,11 +246,7 @@ const searchData = posts.map(post => ({
                   <p class="text-gray-600 text-sm mb-2">${post.description}</p>
                   <div class="flex items-center gap-4 text-sm text-gray-500">
                     <time datetime="${date.toISOString()}">
-                      ${date.toLocaleDateString('en-GB', { 
-                        day: 'numeric', 
-                        month: 'long', 
-                        year: 'numeric' 
-                      })}
+                      ${date.toLocaleDateString('en-GB')}
                     </time>
                     ${post.category ? `
                       <span>•</span>

@@ -62,11 +62,7 @@ const relatedPosts = allPosts
                 <span class="font-medium text-gray-700">Tony Cooper</span>
                 <span>•</span>
                 <time datetime={new Date(post.data.pubDate).toISOString()}>
-                  {new Date(post.data.pubDate).toLocaleDateString('en-US', { 
-                    year: 'numeric', 
-                    month: 'short', 
-                    day: 'numeric' 
-                  })}
+                  {new Date(post.data.pubDate).toLocaleDateString('en-GB')}
                 </time>
                 {post.data.category && (
                   <>
