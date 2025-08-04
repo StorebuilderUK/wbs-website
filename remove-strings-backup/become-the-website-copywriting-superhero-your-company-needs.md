@@ -1,0 +1,293 @@
+---
+title: "Unlock the Secrets to Effective Website Copywriting"
+description: "Discover the secrets to writing effective website copy, and learn how you can become the web copywriting superhero your company needs."
+pubDate: "2024-11-27"
+category: "seo"
+tags: ["seo","website design","marketing","small business","social media"]
+heroImage: "https://static.wixstatic.com/media/b0d63a_d73efdd32148400989f3d51c5f702e5c~mv2.jpg/v1/fill/w_740,h_420,al_c,q_90,usm_0.66_1.00_0.01,enc_avif,quality_auto/b0d63a_d73efdd32148400989f3d51c5f702e5c~mv2.jpg"
+originalUrl: "https://www.webuildstores.co.uk/post/become-the-website-copywriting-superhero-your-company-needs"
+---
+
+# Your Company Needs A Copywriting Superhero.
+
+ * Feb 4, 2022
+
+## Net Yourself A Dream Career With This Simple Website Copywriting Formula.
+
+##
+
+**It was over 20 years ago I picked up a copy of the Sunday Times and**, when I had finally finished lugging it all home, watched it spew its guts out over the front room floor with its colourful array of motorised wheelchair advertising and straight to recycling print garbage,**but the glossy magazine caught my eye.**
+
+Buried amongst the celebrity interviews and foodie pages was a**restaurant turned TV critic**reviewing the week's Television.**AA Gill**was as heartless as a hungry grizzly bear, whether tearing apart poorly done TV drama or**savaging undercooked restaurant food.**
+
+**His eviscerate penmanship**brooked no mercy as he sought to "unpick the thing" from which, having succeeded, he took enormous pleasure.
+
+But equally,**Gill**was revered for his unique writing style, which would reveal how well something was made without being a sop to whatever he was reviewing.**I've dedicated this blog post**to the master critic himself and his**incredibly unique blogging voice**.
+
+Become A Copywriting Superhero!
+
+**AA Gill Was An Inspiration**
+
+AA Gill died on the 10th December 2016 at the age of 62, not long after being diagnosed with "A Full English" of cancer. (His words, not mine).
+
+He had a controversial writing style that generated many complaints. Most notably, calling the Welsh "loquacious, dissemblers, immoral liars, stunted, bigoted, dark, ugly, pugnacious little trolls ", for which he was reported to the Commission for Racial Equality.
+
+They found he had no case to answer, and it was evident that he was**playing to the gallery**to most observers.
+
+It was always "the other lot" he disparaged when pressed on the subject, depending on whether you came from North or South Wales.
+
+> "The most depressing and uncongenial meal, in an anaemic, echoey building, made even more wrist-slashingly ghastly by the sad and silent ghosts of a century of culture and élan and bibulous brilliance. AA Gill
+
+Reading the magazine all those years ago,**I remember thinking Gill was a pompous twat**. A hard-hearted and callous bastard who didn't care who he offended.
+
+But then, more recently, I read his autobiography "Pour Me", and I entered the life of a dyslexic alcoholic who, having got sober in 1984, took his second chance at life by becoming an unswervingly honest critic.
+
+> Very few people are cut out to be critics or would care to be. Everyone has an opinion. Criticism isn't about having an opinion, it's having a value added opinion. Some opinions are worth more than others. Mine are worth more than most. AA Gill
+
+That was when I had my “aha!” moment, and I realised that**Gill had merely found his unique writing voice.**Telling it like it is is much harder than it sounds. Writing reviews that hype the visible good bits while sweeping the substandard under the carpet is the coward's way out.
+
+To become a better blogger and write copy that people wanted to read meant I had to become a better critic and**develop a unique writing voice.**
+
+> Criticism is like being able to unbake a cake. When people fatuously ask why I don't write constructive criticism I tell them there is no such thing. Critics do deconstructive criticism. If you want compliments, phone your mother. AA Gill
+
+You can't call yourself a critic unless you are prepared to be completely honest with the subject matter and put it directly under the microscope, and most people won't do that.
+
+The Great Man Himself... AA Gill
+
+To become a website copywriting superhero and the one that everyone wants on their team, focus on developing the following superpowers:
+
+##
+
+## Copywriting Superpower 1 Kick The Booze
+
+##
+
+###**Sobriety is the one superpower to rule them all.**
+
+**"Everyone wants to go to heaven, but nobody wants to die".**
+
+Writing clear, concise copy requires a clear, focused mind. Once I stopped drinking alcohol, my writing improved immeasurably.
+
+And it's not just the website copywriting that improved, either.
+
+My productivity increased 10x once I had a few months of sobriety under my belt, and get this - the drawback of being the boring sober one on a party night is far outweighed by being the productive sober one at 5 am the following day.
+
+You'll still be going strong writing website content at 11 am when everyone is sleeping off their hangovers.
+
+It's a myth that drinking increases creativity, and although I tried hard for forty years, I could never make it work for me.
+
+Heavy drinking also ruins your libido, but fortunately, abstinence can quickly reverse the effects.
+
+## Copywriting Superpower 2 Eat Healthily, Workout, Rest
+
+##
+
+Once you get rid of the booze, you'll look in the mirror and realise what a dumbass sloth you let yourself become.
+
+Stop dodging the salads and start lifting some weights. You don't need to be Arnold Schwarzenegger, but a superhero needs a fit and healthy body.
+
+Highly sedentary jobs like copywriting can lead to many health problems in the long term, and being a keyboard warrior might not be something you want to be buried on your tombstone.
+
+You'll also find it easier to write copy if your brain isn't working overtime trying to get oxygen up into your head.
+
+Learn some intermittent fasting techniques, drink plenty of water and cut back on caffeine. Get some sleep. It's all stuff that is very well known to produce a positive effect, but do you have the self-discipline to follow through?
+
+Adopting the above two superpowers will put you ahead of 80% of the other web copy wannabees by the simple application of Pareto's principle.
+
+Tell Your Story In Your Own Words
+
+## Copywriting Superpower 3 Learn To Type Fast
+
+##
+
+It took me around 100 hours of practice to get up to an average touch typing speed of around 50 words per minute. Once I got there, any gains were minimal for the amount of time spent practising, and so that's where I stopped practising and focused on the web copywriting.
+
+Typing fast is not only practical; it's essential for getting tasks done correctly and promptly. Whether you're writing reports, typing out emails or code, typing fast can help you accomplish your goals more efficiently.
+
+50-60 words per minute is a good typing speed and way above the average. Learning to touch type is a sound investment of time for anyone aspiring to produce copious amounts of web copy.
+
+## Copywriting Superpower 4 Read A Lot Of Books
+
+##
+
+You don't write a blog post in a vacuum.
+
+Read a lot of different authors, and if you haven't read books before, then start with a couple of classics that will open your eyes to how powerful the written word can be.
+
+**Once you've read "Dracula", the film version will make absolutely no sense whatsoever.**
+
+You'll be amazed at the magical, almost hypnotic effect that writing has when done well. If you immerse yourself in high-quality, compelling copy, your efforts will stand head and shoulders over the competition.
+
+Writing in the third person is a great way to improve your website copywriting. By noting how it affects others, you can adopt an objective tone and look at what you're doing differently.
+
+You'll notice that this lets you use vivid imagery more effectively, which will help attract attention from people aimlessly scrolling social media or browsing websites.
+
+Reading a lot of different authors from a third-person perspective will let you understand why some people resonate with some web pages while others don't have any effect.
+
+Once you've got a good feeling for how language affects other people, then your efforts will seem better by comparison.
+
+Since reading more books, my unique blogging voice has improved in leaps and bounds. Incorporating a different writing style and injecting variety into your written work comes from observing how others put their words together.
+
+My wife's barely-used Kindle has now become my new best friend. Here are some of the books I've read over the past couple of months:
+
+**AA Gill: Pour Me**How an alcoholic, dyslexic and frustrated artist became a highly accomplished, feared and revered restaurant critic.
+
+**Cheryl Strayed: Wild**How about a hike across the Pacific Trail to go and find yourself?
+
+**Bruce Springsteen: Born To Run**Get this in audiobook format if you can as the Boss narrates it. It's one of the best rock and roll autobiographies ever written.
+
+**Guy Sajer: The Forgotten Soldier**A horrific tale of survival on the Russian front from a German soldier's point of view.
+
+**Steve Peters: The Chimp Paradox**Why we do what we do and how to change your thinking.
+
+**Robin Sharma: The Monk Who Sold His Ferrari**Reading this book felt like a chore I had to do. A bit like "The Alchemist" I read it because it's in everyone's top ten list. But I obviously missed the point.
+
+**Grant Cardone: The 10x Rule**How massive action can make a difference for you. Instead of plodding along like everyone else Cardone encourages you to take 10X action to get the desired results.
+
+**Keith Richards: Life**How is this guy still alive? I'm not a fan of the Stones, the early stuff was the best and the apocalyptic "Gimme Shelter" was arguably their finest moment. If you ever wondered why the Stones' were never as good as they could have been, it was because Richards was permanently "out of it" through the seventies, rendering one-half of the songwriting duo impotent.
+
+Richards takes pride in once not sleeping for nine days straight. Funny how "Our Keef" always managed to find the hotel room that went up in flames due to "faulty wiring". Did you know Keef has not visited Mick Jagger's dressing room in over 20 years? This was a brilliant read if a bit rambling towards the end.
+
+**Leo Tolstoy: War And Peace**I managed about four pages before giving up. I may have missed something special but the BBC TV adaption made up for it.
+
+**Be Different**
+
+Being different doesn't mean being outrageously funny or false. It means putting a new spin on the content. You can't hope to compete with 101 other bloggers unless you have something to contribute to the conversation.
+
+## Copywriting Superpower 5 Analyse Other People's Copy
+
+##
+
+In general, most website copy is low-grade filler destined for the outer reaches of the ether sphere where it has no chance of being lit up by the sun.
+
+Once you find authors who are good at their craft, then make a point of studying their work or web pages.
+
+What makes it so good? How is it structured? What words are they using, and how do they make you feel?
+
+By deconstructing other people's website copy, you will develop a feel for what works and why while broadening your vocabulary at the same time.
+
+You might not be able to write like Shakespeare (and who would want to nowadays), but you'll sound good enough to resonate with your target audience and get at least 50% more sales on your landing page than your competitors.
+
+## Copywriting Superpower 6 Write Compelling Headlines
+
+##
+
+A compelling headline needs to grab your website user's attention within the first few seconds of their visit. It should be clear what content they can expect on the page, encouraging them to stay and peruse further.
+
+Keep in mind who the website user for your website is and what they expect to find on it.
+
+Keep website headlines short and straightforward, but make sure that they give website users enough information to decide if they want to stay on the website or not.
+
+Research what keywords website users are likely to use when searching for the product or content you advertise.
+
+Make website headlines personal by writing them from a first-person perspective.
+
+### The easiest way to write headlines is to include numbers like this:
+
+ * Five secrets of effective small business headlines
+
+ * Nine proven ways to write great headlines for your company blog
+
+ * Three easy steps on how to write a great headline that converts
+
+### Improve headlines by writing them in title case:
+
+ * How to Write A Compelling Headline for Your Small Business
+
+ * Ten Ways To Create An Irresistible Offer
+
+ * Six Tips That Will Double Your Conversions With Copywriting
+
+## Copywriting Superpower 7 Get The Tools You Need To Do The Job
+
+##
+
+**Here are two tools that I wouldn't be without:**
+
+**A: Grammarly**
+
+Grammarly is an instant editing tool that will help you make sure your copy reads as perfect as it possibly can on all devices at all times.
+
+It's easy to use and will pick up any mistakes you might have missed while writing or editing your copy, making it much easier for you to write quality content. If nothing else, its free version will act as a gatekeeper to you submitting material with obvious gaffes.
+
+**B: Thesaurus**
+
+Using synonyms will make your copy stand out from the crowd and help you sound like an experienced pro. It's an easy copywriting superpower to copy, open your thesaurus document, and copy the synonyms for your chosen words into your copy.
+
+It might seem like a waste of time at first, but after you've used it for a few weeks, you'll start "seeing" new words wherever you go.
+
+## Copywriting Superpower 8 Become A Ruthless Editor
+
+##
+
+Once you've written a piece of web copy, then set it aside for a day or two and come back to edit.
+
+**Brevity is the name of the game**, and you can tighten up your copy by editing down long sentences, finding synonyms for simple words, and cutting out any comments that don't add to the quality of your message.
+
+Cut out anything that looks or feels like filler. Readers want kicks, not filler - so keep editing until your message is lean and mean.
+
+If you can remove a sentence without losing clarity, then cut it.
+
+Focus on getting all your pronouns to agree with their appropriate antecedents and eliminate redundancies like 'overnight' and 'little by little.
+
+Remember that some things are better left unsaid rather than said poorly or pointlessly. If you're struggling with finding the right word, then work on improving your vocabulary instead of writing something mediocre.
+
+If it's possible to make your copy shorter without affecting its meaning, do it!
+
+## Copywriting Superpower 9 Be The Authentic Version Of You
+
+##
+
+Becoming authentic is the first step towards being a good writer.
+
+If I had to pick one writer whose authenticity leapt out from the page and startled you with raw honesty, it would be the sadly departed AA Gill. You can read more about writing in an authentic voice and [_my tribute to the great writer here_](https://www.webuildstores.co.uk/post/how-to-find-your-authentic-blogging-voice).
+
+Authenticity is the best way to speak your mind and create a blog that people find exciting and compelling.
+
+**Identify who you are as a blogger, and then continue to write like that person.**
+
+You can define authenticity as being honest, genuine, and sincere about one's feelings, habits, or beliefs. Your blog has to sound like you to appeal to anyone.
+
+People like reading blogs with which they can relate. Be yourself when you blog, and let your voice shine through the words you put on the screen.
+
+If you're having trouble with this step, consider keeping a journal for a while. Writing in the third person can be difficult and requires plenty of practice.
+
+Once you've become accustomed to writing in the third person, you can begin making your writing more conversational. That's when it will be easier to transition into writing authentically for your target audience.
+
+## Copywriting Superpower 10 Keep An Editorial Calendar
+
+An effective content strategy requires an editorial calendar. An editorial calendar is a list of content to produce and distribute through your blog, social media and other marketing channels.
+
+You will need to keep two types of records, low level and high level.
+
+The low-level stuff is the article idea, copy, headline, keywords and anything else that goes into making that piece of content complete. I like to use Trello to manage my low-level stuff (you can get it free here), and we also use it to manage customer projects.
+
+My “new idea tree” list of article ideas is in the left column. I add them as I come up with them in the shower or take the dogs for a walk using Trello for a smartphone.
+
+In the following columns are my draft blog posts with links to further reading or sources so I always have a steady stream of new article ideas. Here is what it looks like:
+
+The high-level stuff is your publishing calendar. You could also use the Trello date feature if you wanted to, but I like to see what I'm supposed to be working on in my Google calendar so that it gives me an overview of timeframes. There is plenty of dog walking and thinking time built into my schedule:
+
+Using this system when it's time to write I look in the calendar to see what I'm supposed to be writing and I look in the project board for the subject.
+
+Set a blogging schedule and stick to it. In the beginning, blog writing can seem alien and complicated, but this is true for every aspiring blogger—mainly when, in the early days, you know that hardly anyone will be reading your words. Try starting with one blog post a week, and within a couple of months, you'll notice an improvement as you gain confidence.
+
+I publish a new blog post every Friday, but that's a tight schedule for producing above average content.
+
+You can always go back and improve your older posts and update them with new links to keep them fresh. I like to edit the oldest post on the site every day, even if it means just adding links to more recent content.
+
+## Copywriting Superpower 11**Define Your Reader As Accurately As Possible**
+
+Conjure up a vision of the person for whom you are writing. Be as precise as you can in your imagining. My ideal reader is someone who is 40-50 years old, a small business owner or someone about to take the plunge into starting a business.
+
+They probably have limited IT skills but know enough to find their way around the web and manage their WIFI connections when visiting a Starbucks.
+
+They'll have a family to look after, so getting a [website design](https://www.webuildstores.co.uk/website-design) set up quickly is essential because they don't have hours, days or weeks to spend endlessly doing research. Equally, the budget doesn't run into thousands, so a [pay monthly website](https://www.webuildstores.co.uk/pay-monthly-websites) would be the ideal way to start.
+
+That's the person I'm writing for and who I imagine every time I sit down to write. Whenever I write a new blog post, I think to myself, "how will this help my reader".
+
+So there you have it. Stop drinking alcohol, eat healthily, exercise and sleep. Read books, study other writers you like and edit ruthlessly. Most importantly, just be you because no matter how good or bad your writing is, being authentic is the key to connecting with your reader.
+
+.
+
+**You are well on your way to becoming a copywriting superhero, but in case you don't have the time or energy to be a content marketing monster, then**[**__contact us__**](https://www.webuildstores.co.uk/contact)**_for some help!_**

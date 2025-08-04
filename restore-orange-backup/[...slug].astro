@@ -1,0 +1,178 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import Header from '../../components/Header.astro';
+import Footer from '../../components/Footer.astro';
+import AuthorBio from '../../components/AuthorBio.astro';
+// import GuaranteeBadge from '../../components/GuaranteeBadge.astro';
+import { getCollection } from 'astro:content';
+
+export async function getStaticPaths() {
+  const posts = await getCollection('blog');
+  return posts.map((post) => ({
+    params: { slug: post.slug },
+    props: post,
+  }));
+}
+
+const post = Astro.props;
+const { Content } = await post.render();
+
+// Get related posts for internal linking
+const allPosts = await getCollection('blog');
+const relatedPosts = allPosts
+  .filter(p => p.slug !== post.slug)
+  .filter(p => {
+    // Find posts with similar tags or category
+    const hasCommonTag = p.data.tags?.some(tag => post.data.tags?.includes(tag));
+    const sameCategory = p.data.category === post.data.category;
+    return hasCommonTag || sameCategory;
+  })
+  .slice(0, 3);
+---
+
+<BaseLayout title={post.data.title} description={post.data.description}>
+  <Header />
+  
+  <main class="bg-white">
+    <article>
+      <!-- Breadcrumb -->
+      <div class="bg-gray-50 py-3">
+        <div class="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
+          <nav class="text-sm">
+            <a href="/" class="text-gray-500 hover:text-blue-900">Home</a>
+            <span class="mx-2 text-gray-400">/</span>
+            <a href="/blog" class="text-gray-500 hover:text-blue-900">Blog</a>
+            <span class="mx-2 text-gray-400">/</span>
+            <span class="text-gray-700">{post.data.title}</span>
+          </nav>
+        </div>
+      </div>
+
+      <div class="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8 py-8">
+        <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+          <!-- Main Content -->
+          <div class="lg:col-span-2">
+            <!-- Article Header -->
+            <header class="mb-8">
+              <h1 class="text-3xl lg:text-4xl font-bold text-gray-900 mb-4">
+                {post.data.title}
+              </h1>
+              
+              <div class="flex items-center gap-4 text-sm text-gray-500 mb-6">
+                <span class="font-medium text-gray-700">Tony Cooper</span>
+                <span>•</span>
+                <time datetime={new Date(post.data.pubDate).toISOString()}>
+                  {new Date(post.data.pubDate).toLocaleDateString('en-US', { 
+                    year: 'numeric', 
+                    month: 'short', 
+                    day: 'numeric' 
+                  })}
+                </time>
+                {post.data.category && (
+                  <>
+                    <span>•</span>
+                    <span class="text-blue-900 capitalize">{post.data.category}</span>
+                  </>
+                )}
+              </div>
+              
+              {post.data.heroImage && (
+                <div class="relative w-full rounded-lg overflow-hidden mb-8" style="padding-bottom: 56.76%;">
+                  <img 
+                    src={post.data.heroImage} 
+                    alt={post.data.title}
+                    class="absolute inset-0 w-full h-full object-cover"
+                  />
+                </div>
+              )}
+            </header>
+            
+            <!-- Article Content -->
+            <div class="prose prose-lg max-w-none prose-headings:font-bold prose-h2:text-2xl prose-h2:mt-8 prose-h2:mb-4 prose-h3:text-xl prose-h3:mt-6 prose-h3:mb-3 prose-p:text-gray-700 prose-p:leading-relaxed prose-a:text-blue-900 prose-a:no-underline hover:prose-a:underline prose-strong:text-gray-900">
+              <Content />
+            </div>
+            
+            <!-- Author Bio -->
+            <AuthorBio />
+          </div>
+          
+          <!-- Sidebar -->
+          <aside class="lg:col-span-1">
+            <!-- Sticky wrapper -->
+            <div class="sticky top-24">
+              <!-- Related Posts -->
+              {relatedPosts.length > 0 && (
+                <div class="bg-gray-50 rounded-lg p-6 mb-6">
+                  <h3 class="text-xl font-bold text-gray-900 mb-4">Related Articles</h3>
+                  <div class="space-y-4">
+                    {relatedPosts.map((relatedPost) => (
+                      <div class="border-b border-gray-200 last:border-0 pb-4 last:pb-0">
+                        <a 
+                          href={`/blog/${relatedPost.slug}`}
+                          class="group"
+                        >
+                          <h4 class="font-semibold text-gray-900 group-hover:text-blue-900 transition-colors mb-1">
+                            {relatedPost.data.title}
+                          </h4>
+                          <p class="text-sm text-gray-600 line-clamp-2">
+                            {relatedPost.data.description}
+                          </p>
+                        </a>
+                      </div>
+                    ))}
+                  </div>
+                </div>
+              )}
+              
+              <!-- CTA Box -->
+              <div class="bg-blue-900 text-white rounded-lg p-6">
+                <h3 class="text-xl font-bold mb-3">Need Help With Your Website?</h3>
+                <p class="mb-4 text-sm">
+                  Get expert advice on web design, SEO, and digital marketing strategies.
+                </p>
+                <a 
+                  href="/contact" 
+                  class="inline-block bg-white text-blue-900 px-4 py-2 rounded font-medium hover:bg-gray-100 transition-colors"
+                >
+                  Get Started Today
+                </a>
+              </div>
+            </div>
+          </aside>
+        </div>
+      </div>
+    </article>
+  </main>
+  
+  <Footer />
+</BaseLayout>
+
+<style>
+  /* Custom prose styles to match your design */
+  .prose :where(h2):not(:where([class~="not-prose"] *)) {
+    color: #1a202c;
+    font-weight: 700;
+  }
+  
+  .prose :where(h3):not(:where([class~="not-prose"] *)) {
+    color: #2d3748;
+    font-weight: 600;
+  }
+  
+  .prose :where(a):not(:where([class~="not-prose"] *)) {
+    color: #FF6600;
+    text-decoration: none;
+    font-weight: 500;
+  }
+  
+  .prose :where(a):not(:where([class~="not-prose"] *)):hover {
+    text-decoration: underline;
+  }
+  
+  .line-clamp-2 {
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+  }
+</style>

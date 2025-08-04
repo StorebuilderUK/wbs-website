@@ -1,0 +1,45 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+---
+
+<BaseLayout title="Thank You - We Build Stores" description="Thank you for contacting We Build Stores. We'll be in touch soon!">
+  <Header />
+  
+  <main>
+    <section class="py-16 bg-gray-50 min-h-[60vh] flex items-center">
+      <div class="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8 text-center">
+        <div class="bg-white p-8 rounded-lg shadow-md max-w-2xl mx-auto">
+          <div class="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4">
+            <svg class="w-8 h-8 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+            </svg>
+          </div>
+          
+          <h1 class="text-3xl font-bold text-gray-900 mb-4">Thank You!</h1>
+          <p class="text-lg text-gray-600 mb-6">
+            Your message has been received. We'll get back to you within 24 hours.
+          </p>
+          
+          <div class="space-y-4">
+            <p class="text-gray-600">
+              In the meantime, feel free to:
+            </p>
+            
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+              <a href="/blog" class="inline-flex items-center justify-center px-6 py-3 border border-blue-900 text-blue-900 rounded-md hover:bg-blue-900 hover:text-white transition-colors">
+                Read Our Blog
+              </a>
+              <a href="/" class="inline-flex items-center justify-center px-6 py-3 bg-blue-900 text-white rounded-md hover:bg-blue-950 transition-colors">
+                Return Home
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  
+  <Footer />
+</BaseLayout>

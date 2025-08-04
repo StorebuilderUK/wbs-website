@@ -1,0 +1,592 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import CustomerReviews from '../components/CustomerReviews.astro';
+import GuaranteeBadge from '../components/GuaranteeBadge.astro';
+import { getCollection } from 'astro:content';
+
+// Get latest blog posts
+const allPosts = await getCollection('blog');
+const latestPosts = allPosts
+  .sort((a, b) => new Date(b.data.pubDate).valueOf() - new Date(a.data.pubDate).valueOf())
+  .slice(0, 3);
+---
+
+<BaseLayout title="Professional Web Design & SEO Services" description="We Build Stores offers expert web design, ecommerce development, and SEO services. 25+ years of experience helping businesses grow online.">
+  <Header />
+  
+  <main>
+    <!-- Hero Section -->
+    <section class="relative bg-gradient-to-br from-wbs-blue to-blue-900 text-white">
+      <div class="mx-auto max-w-7xl px-4 py-20 sm:px-6 lg:px-8">
+        <div class="text-center max-w-4xl mx-auto">
+          <h1 class="text-4xl md:text-6xl font-bold mb-6">
+            Transform Your Business With A<br />
+            <span class="text-purple-700">Telford Digital Marketing Agency</span>
+          </h1>
+          <p class="text-xl mb-8">
+            Join 100+ UK Business Owners Growing Their Business Every Week
+          </p>
+          <p class="text-lg mb-6 opacity-90">
+            Professional website design, powerful SEO campaigns, and digital marketing<br />
+            that delivers real results - all backed by our 100% satisfaction guarantee
+          </p>
+          
+          <!-- Animated Pricing Badge -->
+          <div class="flex justify-center mb-8">
+            <div class="relative">
+              <div class="absolute inset-0 bg-gradient-to-r from-purple-700 to-purple-500 rounded-full blur-lg opacity-50 animate-pulse"></div>
+              <div class="relative bg-white/10 backdrop-blur-sm border border-white/20 rounded-full px-6 py-2 flex items-center gap-2">
+                <svg class="w-5 h-5 text-purple-700" fill="currentColor" viewBox="0 0 20 20">
+                  <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                </svg>
+                <span class="text-white font-semibold">Plans from £330/month • No contracts</span>
+              </div>
+            </div>
+          </div>
+          
+          <div class="flex flex-col sm:flex-row gap-4 justify-center items-center">
+            <a href="#get-started" class="inline-flex items-center justify-center px-8 py-4 border border-transparent text-lg font-medium rounded-md text-wbs-blue bg-white hover:bg-gray-100 transition-all transform hover:scale-105 shadow-lg">
+              Get Your Free Consultation
+            </a>
+            <a href="/business-growth-package" class="group relative inline-flex items-center justify-center px-8 py-4 text-lg font-medium rounded-md text-white transition-all transform hover:scale-105">
+              <div class="absolute inset-0 bg-gradient-to-r from-purple-700 to-purple-700 rounded-md transition-all group-hover:blur-lg"></div>
+              <div class="relative flex items-center">
+                View Growth Plans
+                <svg class="w-5 h-5 ml-2 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6"></path>
+                </svg>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <!-- Trust Bar -->
+    <section class="py-8 bg-white border-b">
+      <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        <div class="flex flex-wrap items-center justify-center gap-8 text-center">
+          <div class="flex items-center gap-2">
+            <GuaranteeBadge variant="badge-only" size="small" />
+            <span class="font-semibold text-gray-700">100% Guarantee</span>
+          </div>
+          <div class="flex items-center gap-2">
+            <svg class="w-8 h-8 text-purple-700" fill="currentColor" viewBox="0 0 20 20">
+              <path d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-12a1 1 0 10-2 0v4a1 1 0 00.293.707l2.828 2.829a1 1 0 101.415-1.415L11 9.586V6z"/>
+            </svg>
+            <span class="font-semibold text-gray-700">25+ Years Experience</span>
+          </div>
+          <div class="flex items-center gap-2">
+            <svg class="w-8 h-8 text-purple-700" fill="currentColor" viewBox="0 0 20 20">
+              <path d="M13 6a3 3 0 11-6 0 3 3 0 016 0zM18 8a2 2 0 11-4 0 2 2 0 014 0zM14 15a4 4 0 00-8 0v3h8v-3zM6 8a2 2 0 11-4 0 2 2 0 014 0zM16 18v-3a5.972 5.972 0 00-.75-2.906A3.005 3.005 0 0119 15v3h-3zM4.75 12.094A5.973 5.973 0 004 15v3H1v-3a3 3 0 013.75-2.906z"/>
+            </svg>
+            <span class="font-semibold text-gray-700">100+ Happy Clients</span>
+          </div>
+          <div class="flex items-center gap-2">
+            <svg class="w-8 h-8 text-purple-700" fill="currentColor" viewBox="0 0 20 20">
+              <path fill-rule="evenodd" d="M6.267 3.455a3.066 3.066 0 001.745-.723 3.066 3.066 0 013.976 0 3.066 3.066 0 001.745.723 3.066 3.066 0 012.812 2.812c.051.643.304 1.254.723 1.745a3.066 3.066 0 010 3.976 3.066 3.066 0 00-.723 1.745 3.066 3.066 0 01-2.812 2.812 3.066 3.066 0 00-1.745.723 3.066 3.066 0 01-3.976 0 3.066 3.066 0 00-1.745-.723 3.066 3.066 0 01-2.812-2.812 3.066 3.066 0 00-.723-1.745 3.066 3.066 0 010-3.976 3.066 3.066 0 00.723-1.745 3.066 3.066 0 012.812-2.812zm7.44 5.252a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+            </svg>
+            <span class="font-semibold text-gray-700">Full Service Agency</span>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <!-- Services Section -->
+    <section class="py-16 bg-gray-50">
+      <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-12">
+          <h2 class="text-3xl font-bold text-gray-900 mb-4">Professional Website Design That Actually Generates Leads</h2>
+          <p class="text-lg text-gray-600">What Would You Like To Make Today?</p>
+        </div>
+        
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <!-- Website Design -->
+          <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow">
+            <div class="w-12 h-12 bg-purple-700 rounded-lg flex items-center justify-center mb-4">
+              <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
+              </svg>
+            </div>
+            <h3 class="text-xl font-semibold mb-2">Website Design</h3>
+            <p class="text-gray-600 mb-4">Beautiful, responsive websites that convert visitors into customers.</p>
+            <div class="flex items-center justify-between">
+              <a href="/website-design" class="text-purple-700 hover:text-purple-800 font-medium">Learn More →</a>
+              <span class="text-xs bg-gradient-to-r from-purple-700/10 to-purple-700/10 text-purple-700 px-2 py-1 rounded-full">From £330/mo</span>
+            </div>
+          </div>
+          
+          <!-- SEO Services -->
+          <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow">
+            <div class="w-12 h-12 bg-purple-700 rounded-lg flex items-center justify-center mb-4">
+              <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path>
+              </svg>
+            </div>
+            <h3 class="text-xl font-semibold mb-2">SEO Services</h3>
+            <p class="text-gray-600 mb-4">Get found on Google with our proven SEO strategies and ongoing optimization.</p>
+            <div class="flex items-center justify-between">
+              <a href="/seo-campaign-management" class="text-purple-700 hover:text-purple-800 font-medium">Learn More →</a>
+              <span class="text-xs bg-gradient-to-r from-purple-700/10 to-purple-700/10 text-purple-700 px-2 py-1 rounded-full">From £330/mo</span>
+            </div>
+          </div>
+          
+          <!-- Pay Per Click -->
+          <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow">
+            <div class="w-12 h-12 bg-purple-700 rounded-lg flex items-center justify-center mb-4">
+              <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path>
+              </svg>
+            </div>
+            <h3 class="text-xl font-semibold mb-2">Pay Per Click</h3>
+            <p class="text-gray-600 mb-4">Drive immediate traffic and conversions with expertly managed PPC campaigns.</p>
+            <div class="flex items-center justify-between">
+              <a href="/pay-per-click" class="text-purple-700 hover:text-purple-800 font-medium">Learn More →</a>
+              <span class="text-xs bg-gradient-to-r from-purple-700/10 to-purple-700/10 text-purple-700 px-2 py-1 rounded-full">From £330/mo</span>
+            </div>
+          </div>
+          
+          <!-- Social Media -->
+          <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow">
+            <div class="w-12 h-12 bg-purple-700 rounded-lg flex items-center justify-center mb-4">
+              <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8h2a2 2 0 012 2v6a2 2 0 01-2 2h-2v4l-4-4H9a1.994 1.994 0 01-1.414-.586m0 0L11 14h4a2 2 0 002-2V6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2v4l.586-.586z"></path>
+              </svg>
+            </div>
+            <h3 class="text-xl font-semibold mb-2">Social Media</h3>
+            <p class="text-gray-600 mb-4">Build your brand and engage with your audience across all social platforms.</p>
+            <div class="flex items-center justify-between">
+              <a href="/social-media-plans" class="text-purple-700 hover:text-purple-800 font-medium">Learn More →</a>
+              <span class="text-xs bg-gradient-to-r from-purple-700/10 to-purple-700/10 text-purple-700 px-2 py-1 rounded-full">From £330/mo</span>
+            </div>
+          </div>
+          
+          <!-- Content Writing -->
+          <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow">
+            <div class="w-12 h-12 bg-purple-700 rounded-lg flex items-center justify-center mb-4">
+              <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"></path>
+              </svg>
+            </div>
+            <h3 class="text-xl font-semibold mb-2">Content Writing</h3>
+            <p class="text-gray-600 mb-4">Engaging content that speaks to your audience and improves search rankings.</p>
+            <div class="flex items-center justify-between">
+              <a href="/content-writing-services" class="text-purple-700 hover:text-purple-800 font-medium">Learn More →</a>
+              <span class="text-xs bg-gradient-to-r from-purple-700/10 to-purple-700/10 text-purple-700 px-2 py-1 rounded-full">From £330/mo</span>
+            </div>
+          </div>
+          
+          <!-- Logo Design -->
+          <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow">
+            <div class="w-12 h-12 bg-purple-700 rounded-lg flex items-center justify-center mb-4">
+              <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z"></path>
+              </svg>
+            </div>
+            <h3 class="text-xl font-semibold mb-2">Logo Design</h3>
+            <p class="text-gray-600 mb-4">Professional logos that make your brand memorable and stand out from competitors.</p>
+            <div class="flex items-center justify-between">
+              <a href="/logo-design" class="text-purple-700 hover:text-purple-800 font-medium">Learn More →</a>
+              <span class="text-xs bg-gradient-to-r from-purple-700/10 to-purple-700/10 text-purple-700 px-2 py-1 rounded-full">From £330/mo</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <!-- Choose Your Path Pricing Section -->
+    <section class="relative py-20 overflow-hidden">
+      <!-- Animated Background -->
+      <div class="absolute inset-0 bg-gradient-to-br from-wbs-blue via-blue-800 to-purple-700 opacity-90"></div>
+      <div class="absolute inset-0">
+        <div class="absolute top-20 left-10 w-72 h-72 bg-purple-700/20 rounded-full blur-3xl animate-pulse"></div>
+        <div class="absolute bottom-20 right-10 w-96 h-96 bg-wbs-blue/20 rounded-full blur-3xl animate-pulse" style="animation-delay: 2s"></div>
+      </div>
+      
+      <div class="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-12">
+          <h2 class="text-4xl font-bold text-white mb-4">Choose Your Growth Path</h2>
+          <p class="text-xl text-white/90">Professional digital marketing that delivers real results for UK businesses</p>
+        </div>
+        
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-5xl mx-auto">
+          <!-- Breakthrough Plan -->
+          <div class="group relative">
+            <div class="absolute inset-0 bg-gradient-to-r from-white/20 to-white/10 rounded-2xl blur-xl transform group-hover:scale-105 transition-transform"></div>
+            <div class="relative bg-white/10 backdrop-blur-md border border-white/20 rounded-2xl p-8 hover:bg-white/20 transition-all duration-300 transform hover:-translate-y-2">
+              <div class="text-center mb-6">
+                <h3 class="text-2xl font-bold text-white mb-2">Breakthrough</h3>
+                <div class="flex items-baseline justify-center gap-1">
+                  <span class="text-5xl font-bold text-white">£330</span>
+                  <span class="text-white/70">/month</span>
+                </div>
+                <p class="text-white/80 mt-2">Perfect to launch your business</p>
+              </div>
+              
+              <ul class="space-y-3 mb-8">
+                <li class="flex items-start text-white/90">
+                  <svg class="w-5 h-5 text-green-400 mr-2 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                  </svg>
+                  Weekly Google Business Updates
+                </li>
+                <li class="flex items-start text-white/90">
+                  <svg class="w-5 h-5 text-green-400 mr-2 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                  </svg>
+                  Monthly Blog Post & Graphics
+                </li>
+                <li class="flex items-start text-white/90">
+                  <svg class="w-5 h-5 text-green-400 mr-2 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                  </svg>
+                  SEO Progress Reports
+                </li>
+              </ul>
+              
+              <a href="/business-growth-package" class="block w-full py-3 px-6 bg-white/20 hover:bg-white/30 border border-white/40 rounded-lg text-center text-white font-semibold transition-all transform hover:scale-105">
+                Get Started
+              </a>
+            </div>
+          </div>
+          
+          <!-- Trailblazer Plan - Most Popular -->
+          <div class="group relative transform md:scale-105 md:mt-4">
+            <div class="absolute -top-8 left-1/2 transform -translate-x-1/2 z-10">
+              <div class="bg-gradient-to-r from-purple-700 to-purple-500 text-white text-sm font-bold px-4 py-1 rounded-full animate-pulse shadow-lg">
+                MOST POPULAR
+              </div>
+            </div>
+            <div class="absolute inset-0 bg-gradient-to-r from-purple-700/40 to-purple-500/30 rounded-2xl blur-xl transform group-hover:scale-105 transition-transform"></div>
+            <div class="relative bg-gradient-to-br from-white/20 to-white/10 backdrop-blur-md border-2 border-purple-700/50 rounded-2xl p-8 hover:from-white/30 hover:to-white/20 transition-all duration-300 transform hover:-translate-y-2">
+              <div class="text-center mb-6">
+                <h3 class="text-2xl font-bold text-white mb-2">Trailblazer</h3>
+                <div class="flex items-baseline justify-center gap-1">
+                  <span class="text-5xl font-bold text-white">£595</span>
+                  <span class="text-white/70">/month</span>
+                </div>
+                <p class="text-white/80 mt-2">For established businesses</p>
+              </div>
+              
+              <ul class="space-y-3 mb-8">
+                <li class="flex items-start text-white/90">
+                  <svg class="w-5 h-5 text-green-400 mr-2 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                  </svg>
+                  Everything in Breakthrough
+                </li>
+                <li class="flex items-start text-white/90">
+                  <svg class="w-5 h-5 text-green-400 mr-2 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                  </svg>
+                  Extra Blog Post Monthly
+                </li>
+                <li class="flex items-start text-white/90">
+                  <svg class="w-5 h-5 text-green-400 mr-2 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                  </svg>
+                  Monthly Strategy Session
+                </li>
+                <li class="flex items-start text-white/90">
+                  <svg class="w-5 h-5 text-green-400 mr-2 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                  </svg>
+                  Website Content Updates
+                </li>
+              </ul>
+              
+              <a href="/business-growth-package" class="block w-full py-3 px-6 bg-gradient-to-r from-purple-700 to-purple-700 hover:from-purple-700 hover:to-purple-700 rounded-lg text-center text-white font-semibold transition-all transform hover:scale-105 shadow-lg">
+                Get Started Now
+              </a>
+            </div>
+          </div>
+          
+          <!-- Torch Bearer Plan -->
+          <div class="group relative">
+            <div class="absolute inset-0 bg-gradient-to-r from-white/20 to-white/10 rounded-2xl blur-xl transform group-hover:scale-105 transition-transform"></div>
+            <div class="relative bg-white/10 backdrop-blur-md border border-white/20 rounded-2xl p-8 hover:bg-white/20 transition-all duration-300 transform hover:-translate-y-2">
+              <div class="text-center mb-6">
+                <h3 class="text-2xl font-bold text-white mb-2">Torch Bearer</h3>
+                <div class="flex items-baseline justify-center gap-1">
+                  <span class="text-5xl font-bold text-white">£995</span>
+                  <span class="text-white/70">/month</span>
+                </div>
+                <p class="text-white/80 mt-2">Lead your market</p>
+              </div>
+              
+              <ul class="space-y-3 mb-8">
+                <li class="flex items-start text-white/90">
+                  <svg class="w-5 h-5 text-green-400 mr-2 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                  </svg>
+                  Everything in Trailblazer
+                </li>
+                <li class="flex items-start text-white/90">
+                  <svg class="w-5 h-5 text-green-400 mr-2 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                  </svg>
+                  Three Blog Posts Monthly
+                </li>
+                <li class="flex items-start text-white/90">
+                  <svg class="w-5 h-5 text-green-400 mr-2 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                  </svg>
+                  Bi-weekly Social Updates
+                </li>
+              </ul>
+              
+              <a href="/business-growth-package" class="block w-full py-3 px-6 bg-white/20 hover:bg-white/30 border border-white/40 rounded-lg text-center text-white font-semibold transition-all transform hover:scale-105">
+                Get Started
+              </a>
+            </div>
+          </div>
+        </div>
+        
+        <div class="text-center mt-12">
+          <p class="text-white/90 text-lg mb-4">All plans include: No contracts • Cancel anytime • 100% satisfaction guarantee</p>
+          <a href="/business-growth-package" class="inline-flex items-center text-white hover:text-purple-700 transition-colors">
+            View Full Details & Features
+            <svg class="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+            </svg>
+          </a>
+        </div>
+      </div>
+    </section>
+    
+    <!-- Latest Blog Posts -->
+    <section class="py-16">
+      <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-12">
+          <h2 class="text-3xl font-bold text-gray-900 mb-4">Latest from Our Blog</h2>
+          <p class="text-lg text-gray-600">Insights and tips to help your business grow</p>
+        </div>
+        
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+          {latestPosts.map((post) => (
+            <article class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow">
+              <div class="relative bg-gray-200" style="padding-bottom: 56.76%">
+                {post.data.heroImage ? (
+                  <img 
+                    src={post.data.heroImage} 
+                    alt={post.data.title}
+                    class="absolute inset-0 w-full h-full object-cover"
+                  />
+                ) : (
+                  <div class="absolute inset-0 flex items-center justify-center">
+                    <svg class="w-16 h-16 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z"></path>
+                    </svg>
+                  </div>
+                )}
+              </div>
+              <div class="p-6">
+                <div class="text-sm text-gray-500 mb-2">{new Date(post.data.pubDate).toLocaleDateString('en-GB', { day: 'numeric', month: 'long', year: 'numeric' })}</div>
+                <h3 class="text-xl font-semibold mb-2 line-clamp-2">
+                  <a href={`/blog/${post.slug}`} class="text-gray-900 hover:text-purple-700 transition-colors">
+                    {post.data.title}
+                  </a>
+                </h3>
+                <p class="text-gray-600 mb-4 line-clamp-2">{post.data.description}</p>
+                <a href={`/blog/${post.slug}`} class="text-purple-700 hover:text-purple-800 font-medium inline-flex items-center">
+                  Read More 
+                  <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+                  </svg>
+                </a>
+              </div>
+            </article>
+          ))}
+        </div>
+        
+        <div class="text-center mt-8">
+          <a href="/blog" class="inline-flex items-center px-6 py-3 border border-purple-700 text-base font-medium rounded-md text-purple-700 hover:bg-purple-700 hover:text-white transition-colors">
+            View All Posts
+          </a>
+        </div>
+      </div>
+    </section>
+    
+    <!-- Customer Reviews -->
+    <CustomerReviews useElfsight={true} elfsightAppId="a36f7428-0aa3-4fae-82b0-d862bde38fc0" />
+    
+    <!-- Pricing Preview Banner -->
+    <section class="relative py-16 overflow-hidden bg-gradient-to-r from-wbs-blue to-blue-900">
+      <div class="absolute inset-0">
+        <div class="absolute inset-0 bg-gradient-to-r from-purple-700/20 to-purple-700/20 mix-blend-multiply"></div>
+        <div class="absolute top-0 left-0 w-full h-full">
+          <div class="relative h-full">
+            <div class="absolute top-10 left-10 w-64 h-64 bg-white/10 rounded-full blur-3xl animate-pulse"></div>
+            <div class="absolute bottom-10 right-10 w-80 h-80 bg-purple-700/10 rounded-full blur-3xl animate-pulse" style="animation-delay: 1s"></div>
+          </div>
+        </div>
+      </div>
+      
+      <div class="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-10">
+          <h2 class="text-3xl font-bold text-white mb-4">Ready to Transform Your Business?</h2>
+          <p class="text-xl text-white/90">Choose the perfect growth plan for your business</p>
+        </div>
+        
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-4xl mx-auto">
+          <!-- Mini Breakthrough Card -->
+          <div class="group relative transform transition-all duration-300 hover:scale-105">
+            <div class="absolute inset-0 bg-gradient-to-r from-white/10 to-white/5 rounded-xl blur transform group-hover:blur-lg transition-all"></div>
+            <div class="relative bg-white/10 backdrop-blur-sm border border-white/20 rounded-xl p-6 text-center">
+              <h3 class="text-white font-semibold mb-2">Breakthrough</h3>
+              <div class="text-3xl font-bold text-white mb-1">£330<span class="text-lg font-normal">/mo</span></div>
+              <p class="text-white/70 text-sm">Launch & grow</p>
+            </div>
+          </div>
+          
+          <!-- Mini Trailblazer Card -->
+          <div class="group relative transform transition-all duration-300 hover:scale-110 md:scale-105 pt-2">
+            <div class="absolute -top-1 left-1/2 transform -translate-x-1/2 bg-purple-700 text-white text-xs font-bold px-3 py-1 rounded-full z-10">
+              POPULAR
+            </div>
+            <div class="absolute inset-0 top-2 bg-gradient-to-r from-purple-700/30 to-purple-700/20 rounded-xl blur transform group-hover:blur-lg transition-all"></div>
+            <div class="relative bg-gradient-to-br from-white/20 to-white/10 backdrop-blur-sm border-2 border-purple-700/40 rounded-xl p-6 text-center">
+              <h3 class="text-white font-semibold mb-2">Trailblazer</h3>
+              <div class="text-3xl font-bold text-white mb-1">£595<span class="text-lg font-normal">/mo</span></div>
+              <p class="text-white/70 text-sm">Scale & succeed</p>
+            </div>
+          </div>
+          
+          <!-- Mini Torch Bearer Card -->
+          <div class="group relative transform transition-all duration-300 hover:scale-105">
+            <div class="absolute inset-0 bg-gradient-to-r from-white/10 to-white/5 rounded-xl blur transform group-hover:blur-lg transition-all"></div>
+            <div class="relative bg-white/10 backdrop-blur-sm border border-white/20 rounded-xl p-6 text-center">
+              <h3 class="text-white font-semibold mb-2">Torch Bearer</h3>
+              <div class="text-3xl font-bold text-white mb-1">£995<span class="text-lg font-normal">/mo</span></div>
+              <p class="text-white/70 text-sm">Lead & dominate</p>
+            </div>
+          </div>
+        </div>
+        
+        <div class="text-center mt-10">
+          <a href="/business-growth-package" class="inline-flex items-center px-8 py-4 bg-white text-wbs-blue font-semibold rounded-lg hover:bg-gray-100 transition-all transform hover:scale-105 shadow-xl">
+            Compare All Features
+            <svg class="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+            </svg>
+          </a>
+        </div>
+      </div>
+    </section>
+    
+    <!-- Get Started Section with Form -->
+    <section id="get-started" class="py-16 bg-gray-50">
+      <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
+          <div>
+            <h2 class="text-3xl font-bold text-gray-900 mb-4">Start Your Risk-Free Project Today</h2>
+            <p class="text-lg text-gray-600 mb-6">
+              Ready to transform your online presence? Let's discuss your project and create a custom solution that drives real results.
+            </p>
+            
+            <div class="bg-white p-6 rounded-lg shadow-md mb-6">
+              <GuaranteeBadge variant="compact" size="medium" />
+              <div class="mt-4 space-y-2">
+                <p class="font-semibold text-gray-900">Our 100% Satisfaction Guarantee includes:</p>
+                <ul class="space-y-1 text-gray-600">
+                  <li class="flex items-start">
+                    <svg class="w-5 h-5 text-green-500 mr-2 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+                      <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                    </svg>
+                    Full refund if not satisfied within 30 days
+                  </li>
+                  <li class="flex items-start">
+                    <svg class="w-5 h-5 text-green-500 mr-2 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+                      <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                    </svg>
+                    No hidden fees or surprise charges
+                  </li>
+                  <li class="flex items-start">
+                    <svg class="w-5 h-5 text-green-500 mr-2 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+                      <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                    </svg>
+                    Unlimited revisions until you're happy
+                  </li>
+                  <li class="flex items-start">
+                    <svg class="w-5 h-5 text-green-500 mr-2 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+                      <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                    </svg>
+                    Cancel anytime with no penalties
+                  </li>
+                </ul>
+              </div>
+            </div>
+            
+            <div class="flex items-center gap-4 text-sm text-gray-600">
+              <div class="flex items-center">
+                <svg class="w-5 h-5 text-purple-700 mr-1" fill="currentColor" viewBox="0 0 20 20">
+                  <path d="M2 5a2 2 0 012-2h7a2 2 0 012 2v4a2 2 0 01-2 2H9l-3 3v-3H4a2 2 0 01-2-2V5z"/>
+                  <path d="M15 7v2a4 4 0 01-4 4H9.828l-1.766 1.767c.28.149.599.233.938.233h2l3 3v-3h2a2 2 0 002-2V9a2 2 0 00-2-2h-1z"/>
+                </svg>
+                Quick response within 24 hours
+              </div>
+              <div class="flex items-center">
+                <svg class="w-5 h-5 text-purple-700 mr-1" fill="currentColor" viewBox="0 0 20 20">
+                  <path fill-rule="evenodd" d="M2.166 4.999A11.954 11.954 0 0010 1.944 11.954 11.954 0 0017.834 5c.11.65.166 1.32.166 2.001 0 5.225-3.34 9.67-8 11.317C5.34 16.67 2 12.225 2 7c0-.682.057-1.35.166-2.001zm11.541 3.708a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                </svg>
+                SSL secured form
+              </div>
+            </div>
+          </div>
+          
+          <div class="bg-white p-8 rounded-lg shadow-xl">
+            <h3 class="text-2xl font-bold mb-6">Get Your Free Consultation</h3>
+            <form netlify netlify-honeypot="bot-field" name="homepage-contact" method="POST" action="/contact-success" class="space-y-4">
+              <input type="hidden" name="form-name" value="homepage-contact" />
+              <div>
+                <label for="name" class="block text-sm font-medium text-gray-700 mb-1">Your Name *</label>
+                <input type="text" id="name" name="name" required 
+                  class="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-2 focus:ring-purple-700 focus:border-transparent" />
+              </div>
+              <div>
+                <label for="email" class="block text-sm font-medium text-gray-700 mb-1">Email Address *</label>
+                <input type="email" id="email" name="email" required 
+                  class="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-2 focus:ring-purple-700 focus:border-transparent" />
+              </div>
+              <div>
+                <label for="phone" class="block text-sm font-medium text-gray-700 mb-1">Phone Number</label>
+                <input type="tel" id="phone" name="phone" 
+                  class="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-2 focus:ring-purple-700 focus:border-transparent" />
+              </div>
+              <div>
+                <label for="service" class="block text-sm font-medium text-gray-700 mb-1">Service Interested In</label>
+                <select id="service" name="service" 
+                  class="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-2 focus:ring-purple-700 focus:border-transparent">
+                  <option value="">Select a service...</option>
+                  <option value="website-design">Website Design</option>
+                  <option value="ecommerce">Ecommerce Development</option>
+                  <option value="seo">SEO Campaign Management</option>
+                  <option value="content-writing">Content Writing</option>
+                  <option value="social-media">Social Media Marketing</option>
+                  <option value="other">Other / Not Sure</option>
+                </select>
+              </div>
+              <div>
+                <label for="message" class="block text-sm font-medium text-gray-700 mb-1">Tell us about your project</label>
+                <textarea id="message" name="message" rows="4" 
+                  class="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-2 focus:ring-purple-700 focus:border-transparent"
+                  placeholder="What are your goals? What challenges are you facing?"></textarea>
+              </div>
+              <button type="submit" 
+                class="w-full bg-purple-700 text-white font-bold py-3 px-6 rounded-md hover:bg-purple-700 transition-colors">
+                Get My Free Consultation
+              </button>
+              <p class="text-xs text-gray-500 text-center">
+                By submitting this form, you agree to our privacy policy.
+              </p>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  
+  <Footer />
+</BaseLayout>

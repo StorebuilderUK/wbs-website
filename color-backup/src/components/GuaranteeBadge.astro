@@ -1,0 +1,55 @@
+---
+export interface Props {
+  variant?: 'full' | 'compact' | 'badge-only';
+  size?: 'small' | 'medium' | 'large';
+}
+
+const { variant = 'compact', size = 'medium' } = Astro.props;
+
+const sizeClasses = {
+  small: 'w-16 h-16',
+  medium: 'w-24 h-24',
+  large: 'w-32 h-32'
+};
+---
+
+{variant === 'full' ? (
+  <div class="text-center my-8">
+    <img 
+      src="https://static.wixstatic.com/media/6b7f88_a675ac7772b54b729fec8f6a16b92078~mv2.jpg/v1/fill/w_154,h_154,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/750-750-WBS-Guarantee-1.jpg"
+      alt="100% Money Back Guarantee"
+      class="mx-auto mb-4 w-32 h-32"
+    />
+    <h3 class="text-xl font-bold text-gray-900 mb-2">Are You Ready To Level Up Your Internet Marketing Game?</h3>
+    <p class="text-gray-600 max-w-2xl mx-auto mb-4">
+      Backed up by our 100% money-back guarantee you can purchase any or all of our services on a pay monthly basis.
+    </p>
+    <p class="text-gray-600 mb-2">Want massive amounts of search engine traffic? Then a pay monthly SEO plan is what you need.</p>
+    <p class="text-gray-600 mb-2">Crush the competition on Social Media? Pay for our social media marketing on a monthly basis.</p>
+    <p class="text-gray-600 mb-4">Would you like all of your digital marketing done for you? Talk to us!</p>
+    <a 
+      href="/contact" 
+      class="inline-block bg-purple-700 text-white px-6 py-3 rounded hover:bg-purple-800 transition-colors font-medium"
+    >
+      Make An Enquiry Today!
+    </a>
+  </div>
+) : variant === 'compact' ? (
+  <div class="inline-flex items-center gap-3">
+    <img 
+      src="https://static.wixstatic.com/media/6b7f88_a675ac7772b54b729fec8f6a16b92078~mv2.jpg/v1/fill/w_154,h_154,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/750-750-WBS-Guarantee-1.jpg"
+      alt="100% Money Back Guarantee"
+      class={sizeClasses[size]}
+    />
+    <div>
+      <p class="font-bold text-wbs-blue">100% Satisfaction Guarantee</p>
+      <p class="text-sm text-gray-600">Risk-free service</p>
+    </div>
+  </div>
+) : (
+  <img 
+    src="https://static.wixstatic.com/media/6b7f88_a675ac7772b54b729fec8f6a16b92078~mv2.jpg/v1/fill/w_154,h_154,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/750-750-WBS-Guarantee-1.jpg"
+    alt="100% Money Back Guarantee"
+    class={sizeClasses[size]}
+  />
+)}

@@ -1,0 +1,249 @@
+---
+title: "Small Business Growth Ideas To Skyrocket Website Traffic"
+description: "Trying to start and grow a small business can be difficult, Skyrocket your website traffic with these fantastic small business growth ideas."
+pubDate: "2024-12-06"
+category: "seo"
+tags: ["seo","website design","marketing","small business","ecommerce"]
+heroImage: "https://static.wixstatic.com/media/6b7f88_8a47a98c7ff44f04b1806276633db4a6~mv2.jpg/v1/fill/w_740,h_420,al_c,q_90,usm_0.66_1.00_0.01,enc_avif,quality_auto/6b7f88_8a47a98c7ff44f04b1806276633db4a6~mv2.jpg"
+originalUrl: "https://www.webuildstores.co.uk/post/10-small-business-growth-ideas"
+---
+
+
+# Small Business Growth Ideas To Skyrocket Your Website Traffic
+
+ * Oct 20, 2022
+
+
+**_Starting and growing a small business is no easy feat. I started We Build Stores on a shoestring budget whilst delivering fast food to pay the bills, so I've learned much about "**[**_bootstrapping__**](https://www.shopify.com/uk/encyclopedia/bootstrapping)**_" and business growth over the past couple of years._**
+
+ 
+In the beginning, simply getting your first few customers under the belt can seem like a mountain to climb. As well as trying to**generate an income from under the gun**, small companies also have to contend with limited resources and budget constraints.
+
+ 
+**Thanks to the power of the internet, you can now quickly be accessible from all corners of the globe, but of course, this is also true for your direct competition.**
+
+It's a low barrier to entry, with just a broadband connection and cheap hosting required to enter the quarrelsome fray.
+
+ 
+Filling up the Amazon store with your products may seem like a great way to gain exposure, but it's a cutthroat business, and to make a profit, you need uniqueness to distinguish yourself in the global struggle for eyeballs. 
+
+Here are my top ten small business growth ideas to help coax your fledgling small business from trembling in its soft and chilly nest to soaring like an eagle on a gloriously hot summer day. 
+
+> "If you want to soar like an eagle in life, you can't be flocking with the turkeys."
+
+> -Warren Buffett
+
+ 
+## Choose The Correct Website-Building Platform. 
+
+I have written [_many articles_](https://www.webuildstores.co.uk/blog) exhausting the pros and cons of most software platforms, and you can follow the blog links below to read more. Here are the cliff notes: 
+
+ * eCommerce software is an easy choice between [_Shopify_](https://www.webuildstores.co.uk/shopify-review) and [_EKM_](https://www.webuildstores.co.uk/ekm-review). You will need deep pockets if you insist on [_developing in Magento_](https://www.webuildstores.co.uk/magento-website-design). 
+
+ * Brochure websites should be made with [_Wix_](https://www.webuildstores.co.uk/wix-review). 
+
+ * Pure blogging websites should be made with WordPress 
+
+ * Booking websites, hotel reservations, gym membership sites and all kinds of other small business websites should be made with [_Wix_](https://www.webuildstores.co.uk/wix-review). 
+
+Most [_website design companies_](https://www.webuildstores.co.uk/) will tell you that WordPress is the automatic first-choice [_website builder platform_](https://www.webuildstores.co.uk/post/ecommerce-website-builder-platforms-explained) for building a small business website,**but it's not**. 
+
+WordPress is easy to install. That's where the ease of use ends. Installing plugins, keeping them updated, messing around with themes, not to mention getting involved in CSS coding, are all additional costs you don't need. 
+
+ 
+WordPress is a blogging platform pressed into service as a bastard [_website design_](https://www.webuildstores.co.uk/website-design) tool arising from the lack of any decent alternative. 
+
+But now that Wix has matured into a comprehensive website design solution, there are few reasons to consider anything else. Fight me. WordPress will hinder your business growth.
+
+ 
+[](https://www.webuildstores.co.uk/wix-review)
+
+Read My Comprehensive Wix Review
+
+ 
+You are asking for trouble if you [_choose to build a website yourself with no skills_](https://www.webuildstores.co.uk/post/beginners-guide-to-building-a-website). Too many things can go wrong, including your fundamental [_website design blindness_](https://www.webuildstores.co.uk/post/hire-a-crackerjack-website-design-agency-and-skyrocket-your-profits). 
+
+[_You will save more money_](https://www.webuildstores.co.uk/post/the-cost-of-building-a-website-how-to-get-an-accurate-quote) by choosing the right website software platform and having it professionally designed rather than wasting time trying to do it yourself. 
+
+Concentrate your efforts on what you are good at to grow your small business rather than trying to learn a new skill you will only use once.
+
+ 
+## Make It Easy For Customers To Contact You And Answer In A Timely Fashion
+
+## 
+
+**A website contact form is the minimum requirement for your new website, but people often prefer to call you directly instead of filling in forms.**
+
+ 
+Invest in a landline you can dedicate for business use and post that number on your website. Be judicious in how you circulate your mobile number so that in the event of a fast-growing new business, you are not tied down answering phone calls all day long.
+
+ 
+Website chat is a double-edged sword. On the one side, you can quickly close deals and strike whilst the iron is hot. On the other hand, you lose credibility if you answer chats late or leave them unanswered.
+
+ 
+Monitoring website chat is best left to someone who [_manages your social media_](https://www.webuildstores.co.uk/social-media-plans), so it's best left alone until you have that person in place as your business grows. 
+
+Social media is a great way to communicate with customers, so make sure those chat channels are easily accessible.**Facebook chat is a reliable source of leads for many new startups.**
+
+ 
+### A Note About Managing Email 
+
+Email is easily the worst communication channel for managing clients and their tasks. For one thing, the email address is usually only visible to one person, and for another, keeping track of what has been replied to in an ocean of text is a next-to-impossible task. 
+
+It's well worth investing in low-cost CRM (customer relationship manager) software to make client management a breeze, and if you use Wix, then their bundled CRM tools are an excellent business growth investment. 
+
+Consider becoming an**inbox-zero practitioner**moving all your to-do tasks into a CRM or a plain day-to-page diary for clarity.
+
+ 
+Using Trello To Create Tasks From Email
+
+ 
+## Make Sure The SEO Basics Are Covered 
+
+Once you have commissioned your freshly designed website, you need to make sure that all of the pages are [_search engine optimised_](https://www.webuildstores.co.uk/seo-copywriting). This is a simple but laborious step. Your website design company will typically do this for you as part of the build, but some charge extra, and some omit this step altogether, so be clear that you want it done as part of the [_cost of building a website_](https://www.webuildstores.co.uk/post/the-cost-of-building-a-website-how-to-get-an-accurate-quote) to save having to do it yourself. 
+
+Open a spreadsheet, write down each page name and URL and then write an [_SEO-optimised page_](https://www.webuildstores.co.uk/product-page/90-day-seo-plan) title and meta description for every page. Once you've done that, you can use [_Surferseo_](https://www.surferseo.com) to optimise your page further and see how it will potentially stack up against the competition.
+
+ 
+Each new page you create goes into the spreadsheet, along with its page title and meta description for future reference. 
+
+Don't forget to make sure your [_Google Analytics is collecting data_](https://www.webuildstores.co.uk/post/your-introduction-to-google-analytics) and add your site to [_Google Webmaster Tools_](https://search.google.com/search-console/about) so that you can monitor its site health.
+
+ 
+[](https://www.webuildstores.co.uk/post/introduction-to-seo)
+
+How To Develop An SEO Strategy
+
+ 
+## Devise A Website Content Strategy Plan 
+
+Your website content is the bread and butter of your online presence, so you need to have a clear plan for [_what kind of content you will create and how often you will create it_](https://www.webuildstores.co.uk/post/how-to-design-a-blog-content-planning-schedule). 
+
+A great way to start is by looking at what similar businesses in your industry are doing. Note the blog post topics they cover, the frequency of their posts, and the [_overall tone and style of their writing_](https://www.webuildstores.co.uk/post/become-the-website-copywriting-superhero-your-company-needs). You can use this as a starting point for your content strategy plan and to gain website content ideas. 
+
+One important thing to remember is that your content must be valuable to your target audience.**It should help your customer solve a problem or meet a need**. If it doesn't, they won't bother returning, and your business growth will falter. 
+
+Another essential thing to remember is that your content marketing must be well-written and error-free. This may seem like a no-brainer, but it's surprising how many small businesses publish subpar content. 
+
+ 
+Your readers will quickly lose faith in you if they see typos or grammatical errors, so take the time to proofread everything before you hit publish. 
+
+Lastly, don't forget to promote your content once it's published. Just because you've written it doesn't mean people will automatically see it. You must actively share it with your target audience [_through social media_](https://www.webuildstores.co.uk/post/creative-ideas-for-social-media-marketing-campaigns), email marketing, search engines and other channels.
+
+ 
+[](https://www.webuildstores.co.uk/post/how-to-design-a-blog-content-planning-schedule)
+
+Blog Content Planning 2022
+
+ 
+## Get Listed In Your Local Directories 
+
+Make it easy for customers to find your small business by getting listed in all relevant local directories, including**Google My Business**,**Yelp**,**Foursquare**, and more. You can use [_Brightlocal_](https://www.brightlocal.com) to do the hard work for you. 
+
+Getting listed varies from directory to directory, but it's generally a simple matter of creating a profile and verifying your listing via email or phone. Once you're verified,**make sure to fill out your profile as completely as possible**so that potential customers can learn everything they need to know about your business. 
+
+Don't stop at the major directories; numerous niche directories focus on specific industries or geographical areas. These can be great for small business growth because they offer an opportunity to get in front of a highly targeted audience with your industry news.
+
+ 
+## Generate Reviews And Testimonials 
+
+Customer reviews and testimonials are essential for small businesses because they help to build trust and credibility. When potential customers see that other people have had positive experiences with your business, they are much more likely to do business with you. 
+
+There are a few different ways to generate reviews and testimonials. The first is to ask satisfied customers if they would be willing to leave a review or write a testimonial. You can do this via email, social media, or in person. 
+
+Another way to generate reviews is to offer some kind of incentive, such as a discount or freebie, in exchange for a review. Paying outright for reviews is forbidden, and you wouldn't want to get caught in that spider web. 
+
+Finally, you can also try using third-party platforms like Google Customer Reviews or TrustPilot. These platforms make it easy for customers to leave reviews and testimonials, which you can display on your website or social media pages.
+
+ 
+[**__Gaining Google reviews__**](https://www.webuildstores.co.uk/post/more-google-reviews)**_is one of the best business growth steps you can make._**
+
+ 
+## Use Social Media To Get The Word Out 
+
+Social media is one of the most effective and affordable ways to promote your small business. Not only is it a great way to connect with potential customers, but it's also a powerful tool for building brand awareness and generating leads.
+
+ 
+To get started, create social media accounts for your business on all major platforms, including Facebook, [_Twitter_](https://www.webuildstores.co.uk/post/should-twitter-be-part-of-your-social-media-marketing-strategy), [_Instagram_](https://www.webuildstores.co.uk/post/instagram-basics-for-complete-beginners), and LinkedIn. Then, start posting engaging content that will resonate with your target audience. 
+
+Be sure to post regularly and mix up the types of content you share to keep your pages exciting and fresh. You can share blog posts, photos, infographics, video content, and more. Just remember to keep your audience in mind with everything you post. 
+
+As well as sharing your content, make sure to share other people's content relevant to your industry, showing that you're engaged with what's going on in your field and that you're not just trying to sell products or services all the time. 
+
+Don't forget to interact with other users on social media. Like and comment on other people's posts, and respond to any comments or questions on your pages. The more you engage with others, the more likely they will remember your small business when they need something you offer.
+
+ 
+Start Your Social Media Marketing Campaign In 2022
+
+ 
+### Start A Blog
+
+If you don't already have a [_blog for your small business_](https://www.webuildstores.co.uk/post/your-guide-to-starting-a-small-business-blog-in-2022), now is the time to start one. A business blog is a great way to generate leads, build trust with potential customers and generate business growth. 
+
+When starting a business blog, be sure to focus on creating high-quality, informative content that will be relevant to your target audience. No one wants to read fluff pieces or marketing jargon; they want valuable information that will help them somehow. 
+
+To get ideas for what to write about, consider your customers' pain points and the questions they are likely to have. Then, create content that addresses those needs and concerns. You can also use your blog to share company news, announce new products or services, and give insights into your industry. 
+
+Don't forget to promote your blog posts on social media and through email marketing to get the most traction. You can also use paid advertising to drive traffic to your blog if you have a little money to spend.
+
+ 
+[](https://www.webuildstores.co.uk/post/your-guide-to-starting-a-small-business-blog-in-2022)
+
+Guide To Starting A Small Business Blog
+
+ 
+### Build An Email List
+
+Email marketing is one of the most effective growth strategies to reach small business customers, yet many small business owners don't take advantage of this powerful tool. Now is the time to start if you're not already building an email list. 
+
+There are a few different ways to grow your email list. Start by adding an opt-in form to your website so visitors can sign up to receive emails from you. Use social media and your blog to promote your email list and encourage people to sign up. 
+
+Finally, you can also purchase email lists from reputable providers. Just be sure to scrub the list first to remove any redundant data, so you don't end up spamming people who don't want to hear from you. 
+
+Once you have a solid email list, start sending out regular newsletters with valuable content, special offers, and anything else that would be of interest to your target audience. 
+
+ 
+## Get Active In Local Communities 
+
+Getting involved in local communities is a great way to connect with potential customers and build brand awareness for your small business. There are several ways to get involved, such as joining [_local chambers of commerce_](https://www.britishchambers.org.uk/page/join-a-chamber) or business organisations, sponsoring community events, or volunteering for local causes. 
+
+Not only will getting involved in your community help you meet new people and make new connections, but it will also show that your small business cares more than just making money. This can go a long way in building trust and loyalty among potential customers.
+
+ 
+## Bonus Tip: Create Compelling Videos 
+
+[_Promotional video_](https://www.webuildstores.co.uk/promotional-videos) is one of the most powerful tools available for marketing your small business online. People love watching videos and are more likely to remember your brand if they see a video than if they read text on a website or social media post. 
+
+To get started with video marketing, create a few short, informative videos about your products or services. You can also create video testimonials from satisfied customers or do a series of Q&A videos to answer common questions people have about your industry. 
+
+Once you have a few videos created, post them on your website and social media pages, and promote them through email marketing and paid to advertise. You can also submit your videos to popular video-sharing websites like YouTube and Vimeo.
+
+ 
+## Wrapping It Up 
+
+**Even with strapped cashflow**, there are many things you can do to grow your small business. 
+
+ 
+These ten ideas should help you get started on the path to success. If you need help with any of these steps or with digital marketing in general, we're here to help. 
+
+ 
+[_Send us a message_](https://www.webuildstores.co.uk/contact), and let's chat about how we can help you grow your traffic and sales.
+
+
+Are You Ready To Level Up Your Internet Marketing Game?
+
+Backed up by our 100% money-back guarantee you can purchase any or all of our services on a pay monthly basis.
+
+​
+
+Want massive amounts of search engine traffic? Then a pay monthly SEO plan is what you need.
+
+​
+
+Crush the competition on Social Media? Pay for our social media marketing on a monthly basis.
+
+​
+
+Would you like all of your digital marketing done for you? Talk to us!
+
+[Make An Enquiry Today!](https://www.webuildstores.co.uk/contact)

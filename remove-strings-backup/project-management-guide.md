@@ -1,0 +1,229 @@
+---
+title: "eCommerce Project Management Guide - Build An eCommerce Website"
+description: "Are you building a new eCommerce website? Use my extensive eCommerce project management guide to ensure you get the job done correctly the first time!"
+pubDate: "2022-05-05"
+category: "seo"
+tags: ["seo","website design","marketing","ecommerce","social media"]
+heroImage: "https://static.wixstatic.com/media/b0d63a_c560d3581b5e4aa9aa3b198ff998d416~mv2.jpg/v1/fill/w_740,h_420,al_c,q_90,usm_0.66_1.00_0.01,enc_avif,quality_auto/b0d63a_c560d3581b5e4aa9aa3b198ff998d416~mv2.jpg"
+originalUrl: "https://www.webuildstores.co.uk/post/project-management-guide"
+---
+
+# eCommerce Project Management Guide - Build An eCommerce Website
+
+ * Feb 5, 2021
+
+**The more people involved in eCommerce project management**, the harder it is to get the project across the line on deadline day. Once multiple stakeholders and their egos' are involved, expert project management strategy becomes essential.
+
+(Stakeholders vary from those with a senior management interest in adding to the bottom line or data entry clerks in human resources with interest in how job application forms will display on their section of the website) Everyone wants their say and managing expectations is a critical part of the process.
+
+Whether [_building an eCommerce website_](https://www.webuildstores.co.uk/ecommerce-design) in the hope of generating a second income, replacing your full-time income or managing the [_website design_](https://www.webuildstores.co.uk/website-design) for a global entity, following an exact process will reap huge benefits in time and money savings. Here's my guide to getting your eCommerce website project built right the first time, big or small.
+
+## 1\. Assign a Technical Project Manager And Set Goals
+
+ * The Technical Project Manager (TPM) is the person that provides the conduit through which all communication flows, providing the connection between [_website development_](https://www.webuildstores.co.uk/website-development) staff, clients, digital design firms, [_graphic design agencies_](https://www.webuildstores.co.uk/graphic-design) and anyone else involved in eCommerce project management. The TPM organises and coordinates all project meetings, familiarisation, scheduling, and project planning.
+
+ * In small projects, the TPM can be the design lead or even the business owner themselves. In larger projects, TPM's with diplomacy and sound technical knowledge are valued highly for their ability to cut to the chase and curtail the excessive email chatter that typically accompanies projects with many vested interests.
+
+## 2\. Risk Assessment And Evaluation
+
+ * What are the goals of the new website design? Why do you want to do this?
+
+ * What are the current conversion metrics? Any new implementation must not make these worse.
+
+ * Building a new eCommerce website using a [_cloud-based website builder_](https://www.webuildstores.co.uk/post/cloud-based-enterprise-ecommerce-platforms) like Shopify or EKM poses little risk. The primary considerations to take into account are the amount of time the website development process will consume and allocating resources for the workflow process.
+
+ * Building a new eCommerce website using open source tools carries more risk because there is more development work to be done. Magento is especially resourcing intensive and requires more working hours to develop. Typical digital agency rates for Magento are £50 per hour. Professionally built and maintained Magento websites have the Wow factor, and they look great.
+
+ * Replacing an existing website with a new one carries a higher level of risk. The amount of work involved in migrating data, configuring redirects and moving everything into a new CMS (content management system) can be considerable depending on the size of the website.
+
+ * Consider whether you have the expertise and resources to maintain the complete website and drive it forward.
+
+ * Involve stakeholders and ask what new technology or approaches they would like to try. Risk evaluation will determine what is feasible or a step too far. Design your project management strategy in phases and small sprints to add more functionality in later stages.
+
+### 3\. Budget Analysis
+
+ * Expect to pay £2k - £3k for a well designed Shopify, EKM or Shopwired eCommerce website. Maintenance costs are your monthly subscription.
+
+ * Magento or other comparable open-source solutions typically cost in the £5k to £10k region at the low end with hosting and maintenance costs at £2k+ per year at the low end.
+
+ * Hybris, SAP, IBM and Hewlett Packard solutions begin at £50k+
+
+ * Adobe Experience Manager (AEM) projects can quickly run into millions of pounds. If you have to ask the price you can't afford it. AEM lead developers typically charge £500 per day and are thin on the ground.
+
+ * SEO, [_Social media marketing_](https://www.webuildstores.co.uk/social-media-plans) and other promotions need a £10k+ per annum budget. Results from companies that advertise top rankings for £100 per month are poor value for money.
+
+Decide On An eCommerce Platform:
+
+### 4\. Competition Analysis
+
+ * List all the websites you like in your niche and those you don't like. What are the good points of those you do like?
+
+ * Who are your competitors? Competitor research and uncovering their use of technology is an essential part of the process. As well as discovering the eCommerce platform they use (Wappalyser) you also need to analyse where they get their backlinks from (SEMRush) how they manage their PPC campaigns (SpyFu) and any other business intelligence.
+
+## Requirements Gathering
+
+##
+
+### Business Requirements
+
+ * How do the pricing rules work? B2B (Business to Business) accounts have many different requirements than standard B2C (Business to Consumer) retail accounts. If flexibility in pricing is a significant consideration, you should be looking at Magento, Lemonstand or Zoey where you can fully customise this aspect of your business. Zoey has well-developed processes for handling B2B sales.
+
+ * How do the shipping rules work? Some products may have country exclusions or special requirements such as palletisation or shipping via freight
+
+ *. How does the order fulfilment workflow account for your business practices, for example dropshipping?
+
+ * What are the legal requirements of doing business in your jurisdiction?
+
+### Functional Requirements
+
+Base functional requirements on the user of the service. Some examples are:
+
+ * Product reviews increase conversion rates and highlight product strengths. Who will moderate user reviews and will anonymous reviews be accepted?
+
+ * Product tours (photos/videos/etc.) increase user engagement and differentiate your products from the competition.
+
+ * Shipping calculators set expectations and decrease cart abandonment.
+
+ * Drop-shipped products increase the variety of products.
+
+ * Implement saved shopping carts or printable quotes, because shoppers often require a manager’s permission or purchase order before checkout.
+
+ * How will the account creation routine function?
+
+### Stakeholder Management & Staff Training
+
+There are two ways of approaching stakeholder management. The first is to include the minimum amount of stakeholders possible to avoid creating excessive workflows. Unfortunately, this can lead to significant disaffection with some stakeholder groups but ensures the project runs on time with the minimum of distraction. The second is to include as many stakeholder groups as possible and seek opinions from all. The policy of multiple collaboration adds to the project overhead but appeases stakeholders, and is the preferable route.
+
+ * Identify relevant contacts within each stakeholder group and gather requirements. The objective is to get a picture from every angle of the business. Surveys, workshops, meetings and external agencies are often utilised to collect the ‘bigger’ picture across the company.
+
+ * Discover what forms, feeds and database integrations are required.
+
+ * Prioritising the requirements can be a challenging exercise when dealing with many senior stakeholders.
+
+ * Assign timeframes and create a roadmap to execute the requirements.
+
+ * Ascertain staff training requirements (Content editing, writing blogs, order processing, SEO & PR)
+
+ * Assign documentation detailing.
+
+### Project Management Tools & Milestone Dates
+
+##
+
+### Project Management Software
+
+###
+
+For smaller projects, you could use [Trello](https://trello.com/) as your roadmap. I use it to manage content planning for multiple projects here at**We Build Stores**.
+
+Larger projects commonly use the [Jira project management system](https://www.atlassian.com/software/jira) to organise development work. Projects will have a client Jira login providing complete access to sprint boards, tickets, comments, attachments, and view of code commits - used for task-level scoping and planning. The TPM can manage the Jira board
+
+ * Individual case tickets outline user stories, followed by all tasks at a granular level that will accomplish that user story.
+
+ * Tickets move from the backlog into two-week development sprints. This planning is done daily by the Technical Project Manager and reviewed on at least a weekly basis with clients.
+
+ * Expect change during development and utilise the Agile project management approach
+
+ * The weekly discussion with the client concerns the time/budget available and ascertains which features are the highest priority.
+
+ * Ticket “types” identify new feature requests, bugs, and general tasks and have a four-step workflow for all tickets — Open, In Progress, Ready to QA, Resolved.
+
+ * The Agile project management approach minimises risk, as there is never a time when website developers do not have a clear direction, and they can never be more than five days into project development of one feature before it is reviewed or goes through a round of QA with the client and project team.
+
+### Milestone Dates For The Project Plan
+
+ * Agree on a Content Delivery Date
+
+ * Agree on a Site Architecture Freeze Date
+
+ * Agree on a Site Functionality Freeze Date
+
+ * Agree on a Design Freeze date
+
+ * Agree on a Launch Date & Domain Transfers
+
+## Design & Development
+
+##
+
+### Website Design
+
+How many design mockups will the client expect to review? 2-3 is usually sufficient.
+
+ * Examine competitor websites for themes that look good.
+
+ * eCommerce website builders make it easy to choose a theme which can be modified.
+
+ * Use the existing logo or design a new one? If existing what formats are available?
+
+ * Establish a colour theme.
+
+ * Establish the design elements: Buttons/calls to action (square or rounded edges, gradients, etc.) Establish borders/headers and padding/margins. Less padding and smaller margins provide tighter content. Padding and margins create white space.
+
+ * Images: Discuss a content to image ratio. Image aspect ratio (A proper aspect ratio is 1:1 for product images). Organising photoshoots. Managing photos in a database. Which payment gateways are available?
+
+ * Organise SSL Certificates if using a self-hosted solution.
+
+ * Produce a Site Plan (example attached)
+
+### Content Migration
+
+One often-overlooked task when replacing an old site with a new is content migration:
+
+ * The migration process can be quick and painless if the new and old sites have structurally similar databases or there isn’t too much content. For sites with a significant amount of material that needs to fit in more complex layouts, migration can take more time than the actual build.
+
+ * It’s always ideal to start with a spreadsheet of all pages you plan to migrate with separate columns for links (old & new), status (open, in progress, done) and notes highlighting, for example, if the page needs copy-editing or rewriting entirely.
+
+ * Shared Google Spreadsheets are useful for creating the master list of content and tracking what pages to migrate, their migration status (To Do, In Progress, Done), and notes.
+
+Use**cart2cart**to move from one eCommerce platform to another or automate data emigration
+
+### Content Writing And Style Guides
+
+ * Ensure you produce guidelines for content creation. For example embedded link content, anchor text rules and how to structure headings and subheadings.
+
+ * Determine the type of “case” you want to use for headings — for example All Caps, Title case etc.
+
+ * Do specific departments have a different style from the “house” style?
+
+ * Ensure you annotate CSS documents.
+
+### User Testing
+
+ * An often overlooked part of building a new website is usability testing.
+
+ * Forms can often be challenging to fill in or allow for the entry of erroneous characters. User test forms to spot flaws and remedy them.
+
+ * User testing is particularly useful for eCommerce websites where cart abandonment is a concern. Eliminate any doubt by having your website extensively user-tested.
+
+### SEO & Other
+
+ * Set up redirects from old pages to new.
+
+ * Configure your robots. txt so that private parts of your site don't appear in search results.
+
+ * Create And Submit A Sitemap
+
+ * Implement Google Analytics
+
+ * Set up an SEO project manager admin or webmaster@youremail address for all enquiries
+
+ * Run a survey. Often you can fix problems by making your website visible internally before it goes live.
+
+### Launch
+
+ * Write a “lessons learned” document
+
+ * Backup all your data and store it securely
+
+ * Create a disaster recovery plan
+
+ * Create a page with all your passwords, FTP access etc
+
+**Have A Party!**
+
+**Would You Like Some Help With Your Next eCommerce Project?**[**__Enquire Today!_**](https://www.webuildstores.co.uk/contact)**_**
+
+Tags:
+
+ * [eCommerce](https://www.webuildstores.co.uk/blog/tags/ecommerce)

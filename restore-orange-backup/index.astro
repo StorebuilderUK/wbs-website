@@ -1,0 +1,109 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import Header from '../../components/Header.astro';
+import Footer from '../../components/Footer.astro';
+import { getCollection } from 'astro:content';
+
+// Get all blog posts
+const allPosts = await getCollection('blog');
+const posts = allPosts.sort((a, b) => new Date(b.data.pubDate).valueOf() - new Date(a.data.pubDate).valueOf());
+---
+
+<BaseLayout title="Blog - Web Design & SEO Insights" description="Expert insights on web design, SEO, and digital marketing to help your business grow online.">
+  <Header />
+  
+  <main>
+    <!-- Hero Section -->
+    <section class="bg-gray-50 py-12">
+      <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        <div class="text-center">
+          <h1 class="text-4xl font-bold text-gray-900 mb-4">Blog & Insights</h1>
+          <p class="text-xl text-gray-600 max-w-2xl mx-auto">
+            Stay updated with the latest web design trends, SEO strategies, and digital marketing insights.
+          </p>
+        </div>
+      </div>
+    </section>
+    
+    <!-- Blog Posts Grid -->
+    <section class="py-16">
+      <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          {posts.map((post) => (
+            <article class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow">
+              {post.data.heroImage && (
+                <div class="relative w-full overflow-hidden bg-gray-200" style="padding-bottom: 56.76%;">
+                  <img 
+                    src={post.data.heroImage} 
+                    alt={post.data.title}
+                    class="absolute inset-0 w-full h-full object-cover object-center"
+                    loading="lazy"
+                  />
+                </div>
+              )}
+              {!post.data.heroImage && (
+                <div class="relative w-full bg-gradient-to-br from-wbs-blue to-blue-900" style="padding-bottom: 56.76%;">
+                  <div class="absolute inset-0 flex items-center justify-center">
+                    <span class="text-white text-6xl font-bold opacity-20">WBS</span>
+                  </div>
+                </div>
+              )}
+              <div class="p-6">
+                <div class="flex items-center gap-4 text-sm text-gray-500 mb-2">
+                  <time datetime={new Date(post.data.pubDate).toISOString()}>
+                    {new Date(post.data.pubDate).toLocaleDateString()}
+                  </time>
+                  {post.data.category && (
+                    <>
+                      <span>•</span>
+                      <span>{post.data.category}</span>
+                    </>
+                  )}
+                </div>
+                <h2 class="text-xl font-semibold mb-2">
+                  <a href={`/blog/${post.slug}`} class="text-gray-900 hover:text-blue-900 transition-colors">
+                    {post.data.title}
+                  </a>
+                </h2>
+                <p class="text-gray-600 mb-4 line-clamp-3">{post.data.description}</p>
+                <div class="flex items-center justify-between">
+                  <a href={`/blog/${post.slug}`} class="text-blue-900 hover:text-blue-950 font-medium">
+                    Read More →
+                  </a>
+                  {post.data.tags && (
+                    <div class="flex gap-2">
+                      {post.data.tags.slice(0, 2).map((tag) => (
+                        <span class="text-xs bg-gray-100 text-gray-600 px-2 py-1 rounded">
+                          {tag}
+                        </span>
+                      ))}
+                    </div>
+                  )}
+                </div>
+              </div>
+            </article>
+          ))}
+        </div>
+      </div>
+    </section>
+  </main>
+  
+  <Footer />
+</BaseLayout>
+
+<style>
+  /* Ensure images maintain aspect ratio and fill container */
+  article img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  /* Fallback for line-clamp if not supported */
+  .line-clamp-3 {
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+  }
+</style>

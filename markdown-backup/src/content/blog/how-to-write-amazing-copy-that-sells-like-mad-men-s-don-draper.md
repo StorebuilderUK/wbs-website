@@ -1,0 +1,236 @@
+---
+title: "Engage Your Audience: Secrets to Riveting Blog Writing"
+description: "Riveting your reader to their leather recliner and capturing their full attention for the duration of your new blog is a finely balanced high wire act."
+pubDate: "2024-12-06"
+category: "seo"
+tags: ["seo","website design","marketing","social media","wix"]
+heroImage: "https://static.wixstatic.com/media/b0d63a_9b3554c98890409782f3f0f64901baee~mv2.jpg/v1/fill/w_740,h_420,al_c,q_90,usm_0.66_1.00_0.01,enc_avif,quality_auto/b0d63a_9b3554c98890409782f3f0f64901baee~mv2.jpg"
+originalUrl: "https://www.webuildstores.co.uk/post/how-to-write-amazing-copy-that-sells-like-mad-men-s-don-draper"
+---
+
+# Engage Your Audience: Secrets to Riveting Blog Writing
+
+**URL:** https://www.webuildstores.co.uk/post/how-to-write-amazing-copy-that-sells-like-mad-men-s-don-draper
+**Meta Description:** Riveting your reader to their leather recliner and capturing their full attention for the duration of your new blog is a finely balanced high wire act.
+
+---
+
+# How To Write Amazing Copy That Sells, Like Mad Men's Don Draper
+
+  * [Tony Cooper](https://www.webuildstores.co.uk/profile/storebuilder/profile)
+  * Jun 18, 2019
+  * 8 min read
+
+Updated: Dec 6, 2024
+
+**If you had already begun to suspect that the worlds best blogger,** well, many people say so, had a weakness for the HBO TV series "Mad Men" then you'd be absolutely right. I watched it the first time around in a haze of bringing up five kids, but since they have subsequently fled the nest, it's the perfect time for a Netflix re-run.
+
+  
+
+But before I get to the point of today's [_blog post_](https://www.webuildstores.co.uk/blog) , let me share with you something I have discovered from **_not_** watching television. Yes, that's right, for the past six months or so I've been TV averse.
+
+
+
+**Why I Stopped Watching Television**
+
+  
+
+It all started when I began to get an uneasy feeling of detachment whenever I turned on the TV. I noticed I had begun to record lots of programmes on SKY that I never watched, and when browsing, I could never find anything that would entertain me. I'd start watching a film, and then, after ten minutes I'd be looking at the [IMDB](https://www.imdb.com/) app for ratings, actors and other background information rather than concentrating on viewing the film.
+
+  
+
+**_It got worse_**. Soon I started using [_social media_](https://www.webuildstores.co.uk/social-media-plans) at the same time the football was on to see if other fans opinions aligned with mine. It became more entertaining to read tweets disparaging the appearance of a contestant on "University Challenge" than it was to see Paxman's gurning face whenever a "starter for ten" was wildly off the mark. It all comes down to the memes, you know.
+
+  
+
+Then I realised people around me were doing the same thing. Suddenly "Super Sunday" wasn't so super when the boys came around to watch the football, and they were more interested in their betting apps and smartphones than watching the football game itself. Something didn't feel right at all.**_Riveting your reader to their leather recliner and capturing their full attention_** for the duration of your new blog is a finely balanced high wire act.
+
+  
+
+
+
+**So I went cold turkey on the TV,** cancelled my SKY subscription, and in its place, I stepped up my meditation and mindfulness programmes. I began Yoga and took extended dog walks instead of lying horizontally on the couch most evenings. I've done a 14-day water fast before now and stopped drinking alcohol for twelve months in the past, so this was just a natural extension of my well-being program right?
+
+  
+
+Not quite. I ended up feeling like forced junkie detective Popeye Doyle in one of my favourite films "The French Connection ll" in no time at all. "Give me the fix" my brain shouted, unable to concentrate on anything for more than thirty seconds at all. 
+
+  
+
+However, I stuck it out, and within a few days my concentration improved and I was able to focus better. The uneasy feeling went away. After a few months, my mental state was a lot more positive. After six months, I can quite happily entertain myself for a whole evening with meditation, silence, solitude and a real book.
+
+  
+
+My son calls around the house every weekday morning on his way to work. He laughs at me and calls me weird for sitting in a quiet front room with the TV off, drinking my Dolce Gusto and writing my journal. My wife thinks I'm "odd"for not watching TV, and I know other family members snigger when they talk about me and my weird habits.
+
+  
+
+**_But you see, this is my Zig to your Zag_**. As a society, our predilection with screens and technology is brainwashing us and dumbing us down. It may seem a strange thing to say for someone who is an advocate for technological advance, but computers are supposed to be harnessed to do the work for you, **_not to do your thinking for you_**.
+
+  
+
+And a side benefit of not watching screens is that people stop shoving their smartphones in your face with their grotesque "you gotta see this" antics once they realise you are off the meds. 
+
+  
+
+Anyway, now that I'm a recovered TV addict, Netflix seems like a great way of returning to watch premium drama occasionally and what could be a better start than "Mad Men" and oh, the sweet irony of watching it sans adverts.
+
+  
+
+In the series one finale, the Kodak guys turn up for a presentation by Don Draper, and he gives them a gut punch in the feels.
+
+The “wheel” was a new product that Kodak invented to display photos quickly and easily using 35mm slides via a projector screen and in this scene, Don turns the ordinary sounding "wheel" into the time machine that became known as the Kodak Carousel. 
+
+  
+
+My father used to have a Kodak carousel, and I remember him spending the evenings numbering and re-ordering the slides. There were spectacular shots of him sitting on top of huge mountains in the snow with his army buddies putting up tents and heating up thin soup on a tiny stove. 
+
+  
+
+
+
+  
+
+**Let Your Readers Feel The Emotion**
+
+  
+
+Take a leaf out of Don’s book and describe your product in vivid detail. Sell the aroma, not the flowers. Engage your reader with real-life stories of why you love the product so much, why you get out of bed in the morning to go to work and why you put so much effort into spreading the news.
+
+  
+
+In your quest for more business, your blog is your most valuable sales tool available, and it works for you over and over again. While you sleep, while you eat dinner, or are in meetings preparing for that new product launch.
+
+  
+
+A blog works for you consistently, unlike Don, who like all creative geniuses was an extraordinarily erratic and sometimes tragic figure. Sometimes brilliant, sometimes in the gutter, we loved and hated him for the flawed emotional character he was.
+
+  
+
+Too many smart words bewilder and befuddle while keeping it too simple runs the risk of falling from the high wire into the bulging net where all the other dunce blogging failures have piled up.
+
+  
+
+The middle road is filled with acts that walked the tightrope but never quite captivated or engaged their audience. They just went through the motions in the expectancy that it was enough, never looking like they may fall to an untimely death at any moment.
+
+  
+
+In addition to a dull, lifeless blog, copying your product descriptions from other websites may seem like the quickest way to make your site live, but with no zing to the bling or pizzaz for the topaz, your flat and monotone style is a guaranteed conversion killer.
+
+  
+
+You don't have to become the next Hemingway or Asimov to produce compelling sales copy or an entertaining blog, follow these simple rules to become Don Draper's next capable assistant:
+
+  
+
+**1\. Tell A Real Life Story**
+
+Telling your story is a method of copywriting that doesn't base itself on how good or bad you are at joining words together. It's all about your experience and how you involve the reader in the emotion of the subject.
+
+> "There is nothing to writing – all you do is sit down at a typewriter and bleed." Writer Ernest Hemingway
+
+A real-life story about how you struggled to hold down two jobs, got made redundant and sold your house to start your business is guaranteed to be a compelling read. It doesn't matter what business you are in, emotional connection is the difference between apathy and affection. 
+
+  
+
+**2\. Inject Your Own Personality**
+
+Just because everyone else writes their blog as though they had a frontal lobotomy and the opinion of a politician doesn't mean you have to produce bland, middle-of-the-road averageness to fit in. If you have an opinion, then voice it because that will elevate you to the top echelon of blogging superheroes overnight. 
+
+  
+
+Blogs devoid of original thought, using text that is copied, thieved and barely rewritten to disguise itself from the plagiarism police is so common that anything with a dash of personality and brio stands out like a paupers lunch at the regal banquet. 
+
+  
+
+**3\. Be An Imperious Authoritarian, Not A Weak Submissive**
+
+Write like you mean it and display your sound subject knowledge so that readers understand you to be the expert you say you are. Writing like a whimpering, simpering guttersnipe should be left to those who do it best using words like "maybe", "perhaps", "could be" and "might".
+
+  
+
+The use of these suppliant words indicates that you might have left your spine in the wardrobe when you got dressed this morning. Rid your text of this insipid banality and instead use "certainly", "definitely" and "never" to state your greatness.
+
+  
+
+Become an avaricious researcher and back up your words with key facts and figures so that no one can be left in any doubt who wears the trousers around here.
+
+  
+
+**4\. Space Out Your Sentences**
+
+No reader likes to be confronted with a solid wall of text that looks like a page from Fyodor Dostoyevsky's "The Idiot". 
+
+  
+
+Space out your sentences so that they can easily be scanned for the good bits and a quick understanding of the context of your post. Use plenty of subheadings to make the text easier to grasp.
+
+  
+
+**5\. Use Images To Support Your Text**
+
+Part of being a good blog writer is finding appropriate supporting imagery, and this can take a lot longer than you might think if you haven't done it before. 
+
+  
+
+Adding images to your copy brightens up the page and presents an opportunity for the reader to pause and consider the meaning. Stay away from cliched images like people shaking hands or working on laptops because it looks like you couldn't be bothered to put any real thought into it, which happens to be true.
+
+  
+
+**6\. Turn Appliances Off And Become A Monk For A Few Hours**
+
+Take writing seriously and turn off your phone, your music and anything that might go "ping" in the middle of a sentence. You can't write anything worthwhile with headphones on, or if you are attempting to reply to emails at the same time.
+
+  
+
+Human multitasking is a fallacy and a trap that you shouldn't fall into. Computers multi-task by dividing their processing power between operations. The more concurrent operations, the slower everything runs because processing power is not infinite.
+
+  
+
+By contrast, humans are unable to focus on more than one thing at a time. Continually switching your attention between multiple tasks destroys your concentration and ensures each task will take longer to complete. It's much better to write for an hour or two in one session and then repeat to a conclusion to maintain a high level of productivity.
+
+  
+
+**7\. Read, Re-Read, Read, Publish, Re-Read**
+
+A big problem of being a self-published author is that you have no copy editor to read your work and ruthlessly edit it. There are several steps you can take to mitigate against the disaster of publishing error-ridden copy.
+
+  
+
+The first is to use [_Grammarly_](https://app.grammarly.com/) , which will remove all the obvious punctuation errors and help you to eliminate writing in the past tense, which is a common beginner's error.
+
+  
+
+The second is to read and re-read your work several times even after it is published. After a year or two of writing, it can be astonishing to read your older copy and notice how much you have improved as a writer. This is an excellent reason to get in the habit of updating your older posts.
+
+  
+
+**So, to summarise,** If you have designs to become the next Don Draper try telling a real-life story that has some personality woven into it. Make it clear that you are a master of your craft and space out your sentences to make the text easy to read. Add some images to spice up the piece and concentrate fully on the writing task at hand.
+
+  
+
+Be your own harshest critic and copy-edit fiercely.
+
+  
+
+**_Would You Like Some Help With Blogging Or Copywriting?_**[**_Contact Us_**](https://www.webuildstores.co.uk/contact)** _!_**
+
+  
+
+Are You Ready To Level Up Your Internet Marketing Game?
+
+Backed up by our 100% money-back guarantee you can purchase any or all of our services on a pay monthly basis.
+
+​
+
+Want massive amounts of search engine traffic? Then a pay monthly SEO plan is what you need.
+
+​
+
+Crush the competition on Social Media? Pay for our social media marketing on a monthly basis.
+
+​
+
+Would you like all of your digital marketing done for you? Talk to us!
+
+[Make An Enquiry Today!](https://www.webuildstores.co.uk/contact)

@@ -1,0 +1,49 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import { getCollection, getEntry } from 'astro:content';
+
+export async function getStaticPaths() {
+  const pages = await getCollection('pages');
+  
+  return pages.map((page) => ({
+    params: { slug: page.slug },
+    props: { page },
+  }));
+}
+
+const { page } = Astro.props;
+const { Content } = await page.render();
+
+// Extract metadata from the raw content
+const rawContent = page.body;
+const lines = rawContent.split('\n');
+let title = page.slug.replace(/-/g, ' ').replace(/\b\w/g, l => l.toUpperCase());
+let metaDescription = '';
+
+// Look for title and meta description in the content
+for (let i = 0; i < Math.min(20, lines.length); i++) {
+  const line = lines[i];
+  if (line.startsWith('# ') && title === page.slug.replace(/-/g, ' ').replace(/\b\w/g, l => l.toUpperCase())) {
+    title = line.substring(2).trim();
+  }
+  if (line.includes('**Meta Description:**') || line.includes('Meta Description:')) {
+    metaDescription = line.replace(/\*\*Meta Description:\*\*/, '').replace('Meta Description:', '').trim();
+  }
+}
+---
+
+<BaseLayout title={title} description={metaDescription}>
+  <Header />
+  
+  <main>
+    <article class="mx-auto max-w-4xl px-4 py-12 sm:px-6 lg:px-8">
+      <div class="prose prose-lg max-w-none prose-headings:text-wbs-blue prose-a:text-purple-700 hover:prose-a:text-purple-800">
+        <Content />
+      </div>
+    </article>
+  </main>
+  
+  <Footer />
+</BaseLayout>
