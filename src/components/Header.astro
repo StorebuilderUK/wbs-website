@@ -1,4 +1,6 @@
 ---
+import { Image } from 'astro:assets';
+import logo from '../assets/logo.png';
 ---
 
 <header class="bg-white shadow-sm sticky top-0 z-50">
@@ -48,7 +50,7 @@
         <div class="flex items-center">
           <!-- Logo -->
           <a href="/" class="flex items-center gap-3">
-            <img src="/logo.png" alt="We Build Stores" class="h-14 w-14" />
+            <Image src={logo} alt="We Build Stores" class="h-14 w-14" width={56} height={56} />
             <span class="text-2xl font-bold">
               <span class="text-gray-900">We Build</span>
               <span class="text-orange-500"> Stores</span>

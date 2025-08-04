@@ -76,15 +76,7 @@ const relatedPosts = allPosts
                 )}
               </div>
               
-              {post.data.heroImage && (
-                <div class="relative w-full rounded-lg overflow-hidden mb-8" style="padding-bottom: 56.76%;">
-                  <img 
-                    src={post.data.heroImage} 
-                    alt={post.data.title}
-                    class="absolute inset-0 w-full h-full object-cover"
-                  />
-                </div>
-              )}
+              {/* Hero image is now handled in the MDX content */}
             </header>
             
             <!-- Article Content -->

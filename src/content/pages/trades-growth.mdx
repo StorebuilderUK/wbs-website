@@ -3,6 +3,9 @@ title: "Trades Growth Package - Get More Jobs, Not More Bills"
 description: "Websites and marketing that actually bring in customers for local trades. From £49/month with no contracts. Get found online and grow your business."
 ---
 
+import { Image } from 'astro:assets';
+import beforeImage from '../../assets/images/trades-growth-before.jpg';
+import afterImage from '../../assets/images/trades-growth-after.jpg';
 import PricingSection from '../../components/growth/PricingSection.astro';
 import TradeIcons from '../../components/growth/TradeIcons.astro';
 import ContactSection from '../../components/growth/ContactSection.astro';
@@ -13,13 +16,29 @@ import ContactSection from '../../components/growth/ContactSection.astro';
 
 <div class="grid md:grid-cols-2 gap-8 my-8">
   <div class="relative rounded-lg overflow-hidden shadow-lg">
-    <img src="/images/trades-growth-before.jpg" alt="Before: Stressed tradesperson struggling with paperwork and empty calendar" class="w-full h-auto" />
+    <Image 
+      src={beforeImage} 
+      alt="Before: Stressed tradesperson struggling with paperwork and empty calendar" 
+      class="w-full h-auto"
+      widths={[400, 800, 1200]}
+      sizes="(max-width: 768px) 100vw, 50vw"
+      quality={80}
+      format="webp"
+    />
     <div class="absolute top-0 left-0 bg-black bg-opacity-70 text-white px-4 py-2 text-xl font-bold">
       BEFORE
     </div>
   </div>
   <div class="relative rounded-lg overflow-hidden shadow-lg">
-    <img src="/images/trades-growth-after.jpg" alt="After: Happy tradesperson receiving job notifications on phone" class="w-full h-auto" />
+    <Image 
+      src={afterImage} 
+      alt="After: Happy tradesperson receiving job notifications on phone" 
+      class="w-full h-auto"
+      widths={[400, 800, 1200]}
+      sizes="(max-width: 768px) 100vw, 50vw"
+      quality={80}
+      format="webp"
+    />
     <div class="absolute top-0 left-0 bg-black bg-opacity-70 text-white px-4 py-2 text-xl font-bold">
       AFTER
     </div>
